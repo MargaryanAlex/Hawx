@@ -80,7 +80,7 @@ const Home = () => {
         <h4>{t("Brand_Way-text")}</h4>
         <div className="P-gray-area">
           <div className="G-container">
-            <div className=" G-flex-wrap G-justify-center P-flex-area">
+            <div className=" G-flex-wrap  G-justify-center P-flex-area">
               <div className="P-card">
                 <h5>{t("Perfect_Strategy-text")}</h5>
                 <p>{t("Based_on_research-text")}</p>
