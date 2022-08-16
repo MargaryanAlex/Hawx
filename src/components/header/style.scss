@@ -1,0 +1,155 @@
+.P-header {
+  padding: 1vw 0;
+  width: 100%;
+  z-index: 9999;
+  * {
+    color: #23232f;
+    cursor: pointer;
+  }
+  .P-menu {
+    gap: 100px;
+    z-index: 9999;
+    .P-navigation {
+      gap: 40px;
+      .P-dropdown {
+        position: relative;
+        .P-options {
+          background: #ffffff;
+          margin-top: 15px;
+          width: fit-content;
+          max-height: 0;
+          position: absolute;
+          white-space: nowrap;
+          transition: all 0.4s ease-in-out;
+          border-radius: 15px;
+          right: -100%;
+          box-shadow: 0px 0px 75px 3px rgba(0, 0, 0, 0.2);
+          ul {
+            display: block;
+            transition: all 0.4s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+            width: fit-content;
+            li {
+              margin: 3px auto;
+            }
+          }
+        }
+        .P-options.active {
+          max-height: 250px;
+          padding: 15px;
+          ul {
+            max-height: 250px;
+          }
+          &:before {
+            content: "\25B2";
+            color: #ffffff;
+            position: absolute;
+            z-index: 1;
+            top: -14px;
+            right: 0;
+            left: 60%;
+          }
+        }
+      }
+    }
+  }
+  .P-mobile-menu.active {
+    left: 0;
+  }
+  .P-mobile-menu {
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+    z-index: 9999;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0148ff;
+    padding: 20px;
+    padding-right: 0;
+    .P-selector {
+      ul {
+        background: #0148ff !important;
+      }
+    }
+    * {
+      color: white;
+    }
+    .P-top {
+      position: static;
+      top: 0px;
+      height: 25px;
+      padding-right: 20px;
+      align-items: center;
+    }
+    .P-nav {
+      height: calc(100% - 25px);
+      display: flex;
+      overflow-y: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .P-navigation {
+        margin-bottom: 40px;
+      }
+      a {
+        margin-top: 40px;
+      }
+      li a {
+        margin-top: 0;
+      }
+      .P-dropdown {
+        position: relative;
+        .P-options {
+          width: 100%;
+          max-height: 0;
+          white-space: nowrap;
+          transition: all 0.4s ease-in-out;
+          border-radius: 15px;
+          right: -100%;
+          //   box-shadow: 0px 0px 150px 13px rgba(0, 0, 0, 0.1);
+          ul {
+            display: block;
+            transition: all 0.4s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+            width: fit-content;
+            li {
+              margin: 3px auto;
+            }
+          }
+        }
+        .P-options.active {
+          max-height: 350px;
+          padding: 15px;
+          ul {
+            max-height: 350px;
+          }
+        }
+      }
+    }
+  }
+  .P-language-bar {
+    width: 80px;
+    .P-selector {
+      position: relative;
+      ul {
+        position: absolute;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 75px 3px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+        width: fit-content;
+      }
+      ul.active {
+        max-height: 80px;
+        padding: 10px;
+      }
+    }
+  }
+}

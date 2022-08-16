@@ -1,0 +1,156 @@
+@import "src/assets/style/index.scss";
+
+.P-homepage {
+  width: 100%;
+  .P-solutions {
+    h5 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #23232f;
+    }
+    .P-solutions-list {
+      background: #f5f5f7;
+      margin-top: 70px;
+      padding-top: 20px;
+      min-height: 295px;
+      padding-bottom: 30px;
+      .G-container {
+        width: calc(100%);
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+        margin-top: -90px;
+      }
+      .P-solution {
+        display: flex;
+        width: 14.28%;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0;
+        @include screen-max-width-991 {
+          width: 25%;
+        }
+        @include screen-max-width-607 {
+          width: 50%;
+        }
+        .P-solution-logo {
+          width: 130px;
+          height: 130px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+          margin-bottom: 38px;
+        }
+        p {
+          width: 80%;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          text-align: center;
+
+          color: #23232f;
+        }
+      }
+    }
+  }
+  .P-container {
+    .P-container {
+      width: 60%;
+      margin-top: 24px;
+      padding-bottom: 113px;
+      @include screen-max-width-767 {
+        width: 100%;
+      }
+    }
+    width: 80%;
+    margin: 0 auto;
+    @include screen-max-width-991 {
+      width: 100%;
+    }
+    span {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #434353;
+      @include screen-max-width-767 {
+        margin-top: 32px;
+        text-align: left;
+      }
+    }
+    h2 {
+      font-size: 36px;
+      margin-top: 24px;
+      text-align: center;
+      margin-top: 200px;
+      @include screen-max-width-767 {
+        margin-top: 32px;
+        text-align: left;
+      }
+    }
+    h5 {
+      color: #ffffff;
+      font-size: 36px;
+      margin-top: 24px;
+    }
+  }
+  .P-section {
+    padding-bottom: 96px;
+    h4 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: #23232f;
+      margin-bottom: 24px;
+    }
+    .P-blue-area {
+      background: #0148ff;
+      padding: 40px;
+      width: 100%;
+      @include screen-max-width-767 {
+        padding: 40px 10px;
+      }
+
+      p {
+        color: #ffffff;
+        text-align: center;
+      }
+      .P-counts {
+        div {
+          text-align: center;
+        }
+      }
+    }
+    .P-gray-area {
+      background: #f5f5f7;
+      padding: 40px;
+      width: 100%;
+      .P-flex-area {
+        width: calc(100% + 52px);
+        margin: 0 -26px;
+        color: #434353;
+        .P-card {
+          width: 33.33333333%;
+          padding: 26px;
+          @include screen-max-width-991 {
+            width: 50%;
+          }
+          @include screen-max-width-767 {
+            width: 100%;
+          }
+          h5 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #23232f;
+            margin-bottom: 27px;
+          }
+        }
+      }
+    }
+  }
+}

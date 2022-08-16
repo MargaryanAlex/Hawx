@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin screen-max-width-991 {
+  @media (max-width: $max-width-991) {
+    @content;
+  }
+}
+@mixin screen-max-width-767 {
+  @media (max-width: $max-width-767) {
+    @content;
+  }
+}
+@mixin screen-max-width-607 {
+  @media (max-width: $max-width-607) {
+    @content;
+  }
+}
+@mixin screen-min-width-991 {
+  @media (min-width: $max-width-991) {
+    @content;
+  }
+}

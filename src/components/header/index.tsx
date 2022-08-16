@@ -1,0 +1,277 @@
+import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
+import "./style.scss";
+import logo from "src/assets/img/logo.png";
+import logo_white from "src/assets/img/header/logo_white.png";
+import menu from "src/assets/img/header/menu.png";
+import close from "src/assets/img/header/close.png";
+import flagUK from "src/assets/img/header/Flag_UK.svg";
+import { navList } from "src/router";
+import { useState } from "react";
+import { ArrowDropDown, ArrowDropUp } from "@mui/icons-material";
+
+interface IOnHover {
+  Solutions: boolean;
+  selector: boolean;
+  burgerMenu: boolean;
+}
+interface ISelected {
+  title: string;
+  icon: string;
+}
+
+const Header = () => {
+  const { t } = useTranslation();
+  const [onHover, setOnHover] = useState<IOnHover>({
+    Solutions: false,
+    selector: false,
+    burgerMenu: false,
+  });
+  const [selected, setSelected] = useState<ISelected>({
+    title: "EN",
+    icon: flagUK,
+  });
+  const options: ISelected[] = [
+    { title: "EN", icon: flagUK },
+    { title: "RU", icon: flagUK },
+  ];
+  type ObjectKey = keyof typeof onHover;
+
+  return (
+    <header className="P-header">
+      <div className="G-container G-justify-between G-align-center">
+        <div className="P-logo">
+          <NavLink to="/">
+            <img src={logo} alt="logo" />
+          </NavLink>
+        </div>
+
+        {/*Header for web ____________________________________________________________________________________________________________________*/}
+
+        <div className="P-menu G-web G-justify-between G-align-center">
+          <div className="P-navigation G-justify-between G-align-center">
+            {navList.map((item, index) => {
+              return (
+                <div key={item.title + index}>
+                  {item.path && (
+                    <NavLink to={item.path}>{t(item.title)}</NavLink>
+                  )}
+                  {item.subList && (
+                    <div
+                      className="P-dropdown"
+                      onMouseOver={() => {
+                        setOnHover({
+                          ...onHover,
+                          [item.title as ObjectKey]: true,
+                        });
+                      }}
+                      onMouseLeave={() => {
+                        setOnHover({
+                          ...onHover,
+                          [item.title as ObjectKey]: false,
+                        });
+                      }}
+                    >
+                      <p>{t(item.title)}</p>
+                      <div
+                        className={
+                          onHover[item.title as ObjectKey]
+                            ? "active P-options"
+                            : "P-options"
+                        }
+                      >
+                        <ul>
+                          {item.subList.map((subItem, subIndex) => {
+                            return (
+                              <li key={subItem.title + subIndex}>
+                                <NavLink to={subItem.path as string}>
+                                  {t(subItem.title)}
+                                </NavLink>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <div className="P-language-bar">
+            <div
+              className="P-selector"
+              onMouseOver={() => {
+                setOnHover({ ...onHover, selector: true });
+              }}
+              onMouseLeave={() => {
+                setOnHover({ ...onHover, selector: false });
+              }}
+            >
+              <p className="G-justify-between G-align-center">
+                {selected.title} <img src={selected.icon} alt="flag" />{" "}
+                {onHover.selector ? <ArrowDropUp /> : <ArrowDropDown />}
+              </p>
+              <ul className={onHover.selector ? "active" : ""}>
+                {options.map((item, index) => {
+                  return (
+                    <li
+                      key={item.title + index}
+                      onClick={() => {
+                        setSelected(item);
+                      }}
+                    >
+                      {" "}
+                      {item.title} <img src={item.icon} alt="flag" />
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/*___________________________________________________________________________________________________________________________________ */}
+
+        {/*Header for mobile __________________________________________________________________________________________________________________*/}
+
+        <div className="G-mobile">
+          <img
+            src={menu}
+            alt="menu"
+            onClick={() => {
+              setOnHover({ ...onHover, burgerMenu: true });
+            }}
+          />
+          <div
+            className={
+              onHover.burgerMenu ? "active P-mobile-menu" : "P-mobile-menu"
+            }
+          >
+            <div className="P-top G-justify-between">
+              <NavLink
+                to="/"
+                onClick={() => {
+                  setOnHover({ ...onHover, burgerMenu: false });
+                }}
+              >
+                <img src={logo_white} alt="logo_white" />
+              </NavLink>
+              <img
+                src={close}
+                alt="close"
+                onClick={() => {
+                  setOnHover({ ...onHover, burgerMenu: false });
+                }}
+              />
+            </div>
+            <div className="P-nav">
+              <div className="P-navigation ">
+                {navList.map((item, index) => {
+                  return (
+                    <div key={item.title + index}>
+                      {item.path && (
+                        <NavLink
+                          to={item.path}
+                          onClick={() => {
+                            setOnHover({ ...onHover, burgerMenu: false });
+                          }}
+                        >
+                          {t(item.title)}
+                        </NavLink>
+                      )}
+                      {item.subList && (
+                        <div
+                          className="P-dropdown"
+                          onMouseOver={() => {
+                            setOnHover({
+                              ...onHover,
+                              [item.title as ObjectKey]: true,
+                            });
+                          }}
+                          onMouseLeave={() => {
+                            setOnHover({
+                              ...onHover,
+                              [item.title as ObjectKey]: false,
+                            });
+                          }}
+                        >
+                          <p>
+                            {t(item.title)} {}
+                          </p>
+                          <div
+                            className={
+                              onHover[item.title as ObjectKey]
+                                ? "active P-options"
+                                : "P-options"
+                            }
+                          >
+                            <ul>
+                              {item.subList.map((subItem, subIndex) => {
+                                return (
+                                  <li key={subItem.title + subIndex}>
+                                    <NavLink
+                                      to={subItem.path as string}
+                                      onClick={() => {
+                                        setOnHover({
+                                          ...onHover,
+                                          burgerMenu: false,
+                                        });
+                                      }}
+                                    >
+                                      {t(subItem.title)}
+                                    </NavLink>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="P-language-bar">
+                <div
+                  className="P-selector"
+                  onMouseOver={() => {
+                    setOnHover({ ...onHover, selector: true });
+                  }}
+                  onMouseLeave={() => {
+                    setOnHover({ ...onHover, selector: false });
+                  }}
+                >
+                  <p className="G-justify-between G-align-center">
+                    {selected.title} <img src={selected.icon} alt="flag" />{" "}
+                    {onHover.selector ? <ArrowDropUp /> : <ArrowDropDown />}
+                  </p>
+                  <ul className={onHover.selector ? "active" : ""}>
+                    {options.map((item, index) => {
+                      return (
+                        <li
+                          key={item.title + index}
+                          onClick={() => {
+                            setSelected(item);
+                            setOnHover({ ...onHover, burgerMenu: false });
+                          }}
+                        >
+                          {" "}
+                          {item.title} <img src={item.icon} alt="flag" />
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/*___________________________________________________________________________________________________________________________________ */}
+      </div>
+    </header>
+  );
+};
+
+export default Header;

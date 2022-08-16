@@ -1,0 +1,114 @@
+{
+  "hi": "HI",
+  "Solutions-text": "Solutions",
+  "Clients-text": "Clients",
+  "Company-text": "Company",
+  "News-text": "News",
+  "Contact-text": "Contact",
+  "CRM-text": "CRM Services",
+  "DESIGN-text": "Design Services",
+  "WEBSITE-text": "Website Management",
+  "SPORTSBOOK-text": "Sportsbook Risk Management",
+  "FRAUD-text": "Fraud Management",
+  "PRODUCT-text": "Product Management",
+  "FINANCIAL-text": "Financial Management",
+  "GET_START-text": "Let’s Get Started!",
+  "DONT_HESITATE-text": "Don't hesitate to drop us a message and we'll get back to you right away",
+  "PHONE-text": "Phone",
+  "EMAIL-text": "Email",
+  "FOLLOW-text": "Follow Us",
+  "ABOUT-text": "About Us",
+  "PRIVACY-text": "Privacy Policy",
+  "COOKIES-text": "Cookies Policy",
+  "TERMS-text": "Terms and Conditions",
+  "LEGAL-text": "Legal",
+  "January-text": "January",
+  "February-text": "February",
+  "March-text": "March",
+  "April-text": "April",
+  "May-text": "May",
+  "June-text": "June",
+  "July-text": "July",
+  "August-text": "August",
+  "September-text": "September",
+  "October-text": "October",
+  "November-text": "November",
+  "December-text": "December",
+  "VIEW_MORE-text": "View more clients",
+  "READ_MORE-text": "Read more",
+  "LASTEST-text": "Lastest News & Events",
+  "SEE_ALL-text": "See all lastest news & events",
+  "Markets-text": "Markets",
+  "Employees-text": "Employees",
+  "Offices-text": "Offices",
+  "HawX_Standout-text": "What makes HawX Standout?",
+  "Brand_Way-text": "Enabling You to Brand Your Way",
+  "Perfect_Strategy-text": "Perfect Strategy",
+  "Based_on_research-text": "Based on research and analysis, we introduce revolutionary solutions. Managing an online business is challenging, so many business owners leave the work to the companies like HawX.",
+  "Innovative_Ideas-text": "Innovative Ideas",
+  "The_digital_world-text": "The digital world requires unusual and creative decisions. We develop innovative ideas aimed at bringing the best of experience into an enjoyable adventure for customers.",
+  "Effective_Solutions-text": "Effective Solutions",
+  "Ultimate-text": "Your Ultimate Personalized iGaming Service",
+  "Delivering-text": "Delivering a personal approach to each and every client, we strive to meet your needs in the most creative and original way. As your online business managers, we realise your thoughts and dreams into real actions",
+  "Our_Solutions-text": "Our Solutions",
+
+  "MANAGING-text": " Managing an online business can be challenging. The main challenge is taking care of the website and its functionality which serves as an all-day online showcase. Many business owners would leave the work to companies like HawX. In terms of website design, daily maintenance and CRM, we keep everything 100% updated each day and week.",
+  "news": {
+    "news0": {
+      "newsTitle": "August 2, 2022 | Press Release",
+      "newsContent": "The digital world requires unusual and creative decisions.",
+      "img": "https://www.gettyimages.ae/gi-resources/images/500px/983794168.jpg"
+    },
+    "news1": {
+      "newsTitle": "August 2, 2022 | Press Release",
+      "newsContent": "The digital world requires unusual and creative decisions.",
+      "img": "https://www.gettyimages.ae/gi-resources/images/500px/983794168.jpg"
+    },
+    "news2": {
+      "newsTitle": "August 2, 2022 | Press Release",
+      "newsContent": "The digital world requires unusual and creative decisions.",
+      "img": "https://www.gettyimages.ae/gi-resources/images/500px/983794168.jpg"
+    },
+    "news3": {
+      "newsTitle": "August 2, 2022 | Press Release",
+      "newsContent": "The digital world requires unusual and creative decisions.",
+      "img": "https://www.gettyimages.ae/gi-resources/images/500px/983794168.jpg"
+    },
+    "news4": {
+      "newsTitle": "August 2, 2022 | Press Release",
+      "newsContent": "The digital world requires unusual and creative decisions.",
+      "img": "https://www.gettyimages.ae/gi-resources/images/500px/983794168.jpg"
+    },
+    "news5": {
+      "newsTitle": "August 2, 2022 | Press Release",
+      "newsContent": "The digital world requires unusual and creative decisions.",
+      "img": "https://www.gettyimages.ae/gi-resources/images/500px/983794168.jpg"
+    }
+  },
+  "mentions": {
+    "mention0": {
+      "img": "https://i.postimg.cc/m2kj7yGJ/attachment-115579644-1.png",
+      "content": "The digital world requires unusual and creative decisions. We develop innovative ideas aimed at bringing the best of experience into an enjoyable adventure for customers.",
+      "name": "Daniel Smith",
+      "role": "Financial Manager of SorsX"
+    },
+    "mention1": {
+      "img": "https://i.postimg.cc/m2kj7yGJ/attachment-115579644-1.png",
+      "content": "The digital world requires unusual and creative decisions. We develop innovative ideas aimed at bringing the best of experience into an enjoyable adventure for customers.",
+      "name": "Daniel Smith",
+      "role": "Financial Manager of SorsX"
+    },
+    "mention2": {
+      "img": "https://i.postimg.cc/m2kj7yGJ/attachment-115579644-1.png",
+      "content": "The digital world requires unusual and creative decisions. We develop innovative ideas aimed at bringing the best of experience into an enjoyable adventure for customers.",
+      "name": "Daniel Smith",
+      "role": "Financial Manager of SorsX"
+    },
+    "mention3": {
+      "img": "https://i.postimg.cc/m2kj7yGJ/attachment-115579644-1.png",
+      "content": "The digital world requires unusual and creative decisions. We develop innovative ideas aimed at bringing the best of experience into an enjoyable adventure for customers.",
+      "name": "Daniel Smith",
+      "role": "Financial Manager of SorsX"
+    }
+  }
+}

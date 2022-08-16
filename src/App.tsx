@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.scss";
+import PagesLayout from "./layout/pagesLayout";
+import { IRoute, pagesRouteList } from "./router";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <h1>HAWX</h1>
+      <div className="App">
+        <PagesLayout>
+          <Routes>
+            {pagesRouteList.map((item: IRoute) => {
+              return (
+                <Route
+                  path={item.path}
+                  element={<item.component />}
+                  key={item.path}
+                />
+              );
+            })}
+          </Routes>
+        </PagesLayout>
+      </div>
+    </BrowserRouter>
   );
 }
 

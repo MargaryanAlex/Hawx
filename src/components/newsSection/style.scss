@@ -1,0 +1,30 @@
+.P-NewsSecition {
+  padding-bottom: 90px;
+  .P-lastNews {
+    padding-bottom: 90px;
+  }
+  .G-flex {
+    gap: 30px;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #23232f;
+    margin-bottom: 32px;
+  }
+  button {
+    width: 252px;
+    height: 40px;
+    background: #0148ff;
+    border-radius: 4px;
+    color: #ffffff;
+    margin-top: 40px;
+    a {
+      color: #ffffff;
+    }
+  }
+}

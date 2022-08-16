@@ -1,0 +1,47 @@
+.P-newsCard {
+  width: 250px;
+  height: 290px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  h5 {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #434353;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    color: #23232f;
+  }
+  img {
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+  }
+  a {
+    font-size: 11px;
+    line-height: 16px;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: #0148ff;
+  }
+
+  .P-content {
+    position: relative;
+    height: 170px;
+    width: 100%;
+    margin-top: -10px;
+    border-radius: 4px;
+    padding: 15px;
+    background: #ffffff;
+    z-index: 10;
+  }
+}
