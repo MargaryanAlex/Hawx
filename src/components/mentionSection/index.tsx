@@ -52,7 +52,7 @@ const MentionSection = () => {
           return (
             <div className="P-slide" key={item.name + index}>
               <div className="P-card">
-                <img src={item.img} alt="image" />
+                <img src={item.img} alt="pic" />
                 <p className="P-content">
                   {t(`mentions.mention${index}.content`)}
                 </p>
