@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hawx/static/css/main.d83bc0da.css",
-    "main.js": "/Hawx/static/js/main.85d29d3e.js",
+    "main.css": "/Hawx/static/css/main.c1e0bb1d.css",
+    "main.js": "/Hawx/static/js/main.283ccde2.js",
     "static/js/787.8f116df5.chunk.js": "/Hawx/static/js/787.8f116df5.chunk.js",
     "static/media/Flag_UK.svg": "/Hawx/static/media/Flag_UK.3414128a1e3c12460cd3d4dd174f929b.svg",
     "static/media/betconstruct.svg": "/Hawx/static/media/betconstruct.4ce13dfa4a8d4d0bf9854a4d0909a804.svg",
@@ -17,12 +17,12 @@
     "static/media/instagram.svg": "/Hawx/static/media/instagram.4f11fa7adfa709d50b57a883a2bcc92a.svg",
     "static/media/fb.svg": "/Hawx/static/media/fb.ef56160cf804bc6f533b01936294e981.svg",
     "index.html": "/Hawx/index.html",
-    "main.d83bc0da.css.map": "/Hawx/static/css/main.d83bc0da.css.map",
-    "main.85d29d3e.js.map": "/Hawx/static/js/main.85d29d3e.js.map",
+    "main.c1e0bb1d.css.map": "/Hawx/static/css/main.c1e0bb1d.css.map",
+    "main.283ccde2.js.map": "/Hawx/static/js/main.283ccde2.js.map",
     "787.8f116df5.chunk.js.map": "/Hawx/static/js/787.8f116df5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d83bc0da.css",
-    "static/js/main.85d29d3e.js"
+    "static/css/main.c1e0bb1d.css",
+    "static/js/main.283ccde2.js"
   ]
 }
