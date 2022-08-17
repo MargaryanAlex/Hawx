@@ -10,6 +10,9 @@ import { companyList, legalList, solutionsList } from "src/router";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   const { t } = useTranslation();
+  const goTo: (url: string) => void = (url) => {
+    (window.open(url, "_blank") as Window).focus();
+  };
   return (
     <footer className="P-footer">
       <div className="P-contacts">
@@ -33,9 +36,27 @@ const Footer = () => {
             <div className="P-social-icons">
               <p>{t("FOLLOW-text")}</p>
               <div className="P-icons">
-                <img src={fb} alt="Facebook" />
-                <img src={linkdin} alt="Linkdin" />
-                <img src={insta} alt="Instagram" />
+                <img
+                  src={fb}
+                  alt="Facebook"
+                  onClick={() => {
+                    goTo("https://www.facebook.com/HawX.io");
+                  }}
+                />
+                <img
+                  src={linkdin}
+                  alt="Linkdin"
+                  onClick={() => {
+                    goTo("https://www.linkedin.com/company/hawx/");
+                  }}
+                />
+                <img
+                  src={insta}
+                  alt="Instagram"
+                  onClick={() => {
+                    goTo("https://www.instagram.com/hawx.io/");
+                  }}
+                />
               </div>
             </div>
             <span>© 2022 Turn Up. All Rights Reserved</span>

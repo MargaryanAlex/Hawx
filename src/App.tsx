@@ -1,11 +1,11 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import PagesLayout from "./layout/pagesLayout";
 import { IRoute, pagesRouteList } from "./router";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/Hawx">
       <h1>HAWX</h1>
       <div className="App">
         <PagesLayout>
@@ -22,7 +22,7 @@ function App() {
           </Routes>
         </PagesLayout>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

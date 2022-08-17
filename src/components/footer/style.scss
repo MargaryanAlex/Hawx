@@ -1,4 +1,9 @@
 @import "src/assets/style/index.scss";
+.P-social-icons {
+  img {
+    cursor: pointer;
+  }
+}
 .P-footer {
   position: absolute;
   bottom: 0;
