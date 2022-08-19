@@ -1,12 +1,12 @@
 import React from "react";
 import { Components } from "src/pages";
-import crm from "src/assets/img/homePage/crm.png";
-import design from "src/assets/img/homePage/design.png";
-import financial from "src/assets/img/homePage/design.png";
-import froud from "src/assets/img/homePage/froud.png";
-import product from "src/assets/img/homePage/product.png";
-import sportsbook from "src/assets/img/homePage/sportsbook.png";
-import web from "src/assets/img/homePage/web.png";
+import crm from "src/assets/img/solutions/crm.png";
+import design from "src/assets/img/solutions/design.png";
+import financial from "src/assets/img/solutions/financial.png";
+import froud from "src/assets/img/solutions/fraud.png";
+import product from "src/assets/img/solutions/product.png";
+import sportsbook from "src/assets/img/solutions/sportsbook.png";
+import web from "src/assets/img/solutions/website.png";
 
 export interface IRoute {
   path: string;

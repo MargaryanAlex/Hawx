@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import "./style.scss";
-import logo from "src/assets/img/logo.png";
+import logo from "src/assets/img/logo.svg";
 import logo_white from "src/assets/img/header/logo_white.png";
 import menu from "src/assets/img/header/menu.png";
 import close from "src/assets/img/header/close.png";
