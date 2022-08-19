@@ -7,6 +7,19 @@
   height: auto;
   margin: 0 auto !important;
 }
+.slick-slider {
+  width: 90%;
+  margin: 0 auto;
+  @include screen-max-width-767 {
+    width: calc(100%);
+  }
+}
+.slick-slide {
+  background: transparent !important;
+  .P-slide {
+    background: #ffffff;
+  }
+}
 .slick-track {
   height: max-content;
 }

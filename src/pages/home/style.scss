@@ -87,7 +87,7 @@
       font-size: 36px;
       margin-top: 24px;
       text-align: center;
-      margin-top: 200px;
+      margin-top: 160px;
       @include screen-max-width-767 {
         margin-top: 32px;
         text-align: left;
@@ -123,6 +123,9 @@
       .P-counts {
         div {
           text-align: center;
+        }
+        p {
+          font-size: 20px;
         }
       }
     }

@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 45px;
+    gap: 30px;
     row-gap: 10px;
     @include screen-max-width-991 {
       gap: 10px;

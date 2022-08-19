@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { RouteNames } from "src/router";
 import MentionSection from "../mentionSection";
-console.log(jsonFile.mentions);
 
 const NewsSection = () => {
   const { t } = useTranslation();
@@ -33,6 +32,10 @@ const NewsSection = () => {
         <button>
           <NavLink to={RouteNames.NEWS}>{t("SEE_ALL-text")}</NavLink>
         </button>
+      </div>
+      <div className="P-slider-header">
+        <h5>{t("Trusted-text")}</h5>
+        <p>{t("We_work-text")}</p>
       </div>
       <div className="P-slider-section">
         <div className="G-container">

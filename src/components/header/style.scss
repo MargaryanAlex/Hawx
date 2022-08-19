@@ -1,16 +1,17 @@
 .P-header {
-  padding: 1vw 0;
+  padding: 40px 0 40px;
   width: 100%;
   z-index: 9999;
   * {
     color: #23232f;
     cursor: pointer;
+    font-size: 14px;
   }
   .P-menu {
     gap: 100px;
     z-index: 9999;
     .P-navigation {
-      gap: 40px;
+      gap: 48px;
       .P-dropdown {
         position: relative;
         .P-options {

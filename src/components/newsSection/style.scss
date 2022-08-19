@@ -1,5 +1,30 @@
 .P-NewsSecition {
-  padding-bottom: 90px;
+  .P-slider-section {
+    background: #f5f5f7;
+    padding-bottom: 90px;
+    padding-top: 20px;
+  }
+  .P-slider-header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    h5 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      /* identical to box height */
+
+      color: #23232f;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      color: #434353;
+    }
+  }
   .P-lastNews {
     padding-bottom: 90px;
   }
