@@ -5,6 +5,8 @@
   overflow: hidden;
   position: relative;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  padding-bottom: 15px;
+  box-sizing: border-box;
   h5 {
     font-weight: 400;
     font-size: 11px;
@@ -14,11 +16,12 @@
     margin-bottom: 20px;
   }
   p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 20px;
-    color: #23232f;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    margin-bottom: 20px !important;
+    color: #23232f !important;
+    text-align: left !important;
   }
   img {
     z-index: 0;

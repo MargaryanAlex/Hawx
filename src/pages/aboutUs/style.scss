@@ -1,0 +1,98 @@
+.P-about-us {
+  .P-about-us-text {
+    margin-top: 90px;
+    gap: 190px;
+    row-gap: 120px;
+    padding-bottom: 60px;
+    .P-about-card {
+      width: calc(50% - 95px);
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 35px;
+        color: #23232f;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 17px;
+        color: #434353;
+      }
+      span {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 14px;
+        color: #23232f;
+      }
+      .P-icons {
+        gap: 13px;
+      }
+      .P-numbers {
+        gap: 35px;
+        p {
+          font-weight: 600;
+          font-size: 24px;
+          color: #0148ff;
+        }
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #0148ff;
+        }
+      }
+    }
+  }
+  .P-photos {
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 48px;
+      text-align: center;
+      color: #23232f;
+      margin-bottom: 40px;
+    }
+    .P-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -9px;
+      width: calc(100% + 18px);
+      justify-content: center;
+      row-gap: 56px;
+    }
+    .P-photo-card {
+      width: 25%;
+      padding: 9px;
+      text-align: center;
+
+      .P-photo {
+        display: block;
+        width: 255px;
+        height: 268px;
+        left: 184px;
+        top: 1067px;
+        background: #d9d9d9;
+        border-radius: 4px;
+        object-fit: cover;
+        overflow: hidden;
+      }
+      h4 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 14px auto 4px;
+        color: #23232f;
+      }
+      p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+
+        color: #434353;
+      }
+    }
+  }
+}
