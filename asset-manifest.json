@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hawx/static/css/main.708914a3.css",
-    "main.js": "/Hawx/static/js/main.3f8f9cfc.js",
+    "main.css": "/Hawx/static/css/main.533fd4e6.css",
+    "main.js": "/Hawx/static/js/main.9350b16d.js",
     "static/js/787.8f116df5.chunk.js": "/Hawx/static/js/787.8f116df5.chunk.js",
     "static/media/ciwinz.svg": "/Hawx/static/media/ciwinz.f3d75026a5d7fe31d517cde7df3cafa2.svg",
     "static/media/gamblecity.svg": "/Hawx/static/media/gamblecity.ab250752b79ee7b85be485560153da15.svg",
@@ -41,16 +41,19 @@
     "static/media/slick.eot": "/Hawx/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Hawx/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Hawx/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/Linkedin.svg": "/Hawx/static/media/Linkedin.b4a8225328392902da1a54b33b5fbac4.svg",
     "static/media/linkedin.svg": "/Hawx/static/media/linkedin.afaafa9676d6c0267532d77201b004d0.svg",
+    "static/media/Instagram.svg": "/Hawx/static/media/Instagram.2f1f65954de6b9531bb7d9629abcdab8.svg",
     "static/media/instagram.svg": "/Hawx/static/media/instagram.4f11fa7adfa709d50b57a883a2bcc92a.svg",
+    "static/media/Facebook.svg": "/Hawx/static/media/Facebook.8c7dd28acf06754535ad152fc7384ad3.svg",
     "static/media/fb.svg": "/Hawx/static/media/fb.ef56160cf804bc6f533b01936294e981.svg",
     "index.html": "/Hawx/index.html",
-    "main.708914a3.css.map": "/Hawx/static/css/main.708914a3.css.map",
-    "main.3f8f9cfc.js.map": "/Hawx/static/js/main.3f8f9cfc.js.map",
+    "main.533fd4e6.css.map": "/Hawx/static/css/main.533fd4e6.css.map",
+    "main.9350b16d.js.map": "/Hawx/static/js/main.9350b16d.js.map",
     "787.8f116df5.chunk.js.map": "/Hawx/static/js/787.8f116df5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.708914a3.css",
-    "static/js/main.3f8f9cfc.js"
+    "static/css/main.533fd4e6.css",
+    "static/js/main.9350b16d.js"
   ]
 }
