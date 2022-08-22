@@ -4,8 +4,11 @@
   width: 100%;
   .P-solutions {
     padding-bottom: 64px;
+    @include screen-max-width-991 {
+      padding-bottom: 24px;
+    }
     h5 {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 20px;
       line-height: 30px;
       color: #23232f;
@@ -17,25 +20,33 @@
       min-height: 295px;
       padding-bottom: 30px;
       .G-container {
-        width: calc(100%);
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        padding: 0;
         justify-content: space-between;
         margin-top: -90px;
+        gap: calc((100% - (7 * 129px)) / 6);
+        @include screen-max-width-991 {
+          gap: calc((100% - (4 * 129px)) / 3);
+        }
+        @include screen-max-width-607 {
+          gap: calc((100% - (3 * 129px)) / 2);
+        }
+        @include screen-max-width-440 {
+          gap: calc((100% - (2 * 129px)) / 1);
+        }
       }
       .P-solution {
         display: flex;
-        width: 14.28%;
+        width: 129px;
         flex-direction: column;
         align-items: center;
         padding: 12px 0;
         @include screen-max-width-991 {
-          width: 25%;
+          // width: 25%;
         }
         @include screen-max-width-607 {
-          width: 50%;
+          // width: 50%;
         }
         .P-solution-logo {
           width: 130px;
@@ -46,10 +57,13 @@
           border-radius: 4px;
           margin-bottom: 38px;
           padding: 20px;
+          @include screen-max-width-991 {
+            margin-bottom: 15px;
+          }
         }
         p {
-          width: 80%;
-          font-weight: 500;
+          width: 60%;
+          font-weight: 600;
           font-size: 14px;
           line-height: 21px;
           text-align: center;
@@ -58,14 +72,24 @@
         }
       }
     }
+    .P-solution:nth-child(1) p {
+      width: 40%;
+    }
+    .P-solution:nth-child(2) p {
+      width: 44%;
+    }
+    .P-solution:nth-child(4) p {
+      width: 80%;
+    }
   }
   .P-container {
     .P-container {
-      width: 60%;
+      width: 75%;
       margin-top: 24px;
       padding-bottom: 113px;
       @include screen-max-width-767 {
         width: 100%;
+        padding-bottom: 35px;
       }
     }
     width: 80%;
@@ -89,6 +113,7 @@
       margin-top: 24px;
       text-align: center;
       margin-top: 160px;
+      color: #23232f;
       @include screen-max-width-767 {
         margin-top: 32px;
         text-align: left;
@@ -102,12 +127,21 @@
   }
   .P-section {
     padding-bottom: 96px;
+    @include screen-max-width-991 {
+      padding-bottom: 24px;
+    }
     h4 {
-      font-weight: 500;
+      font-weight: 600;
       font-size: 24px;
       line-height: 36px;
       color: #23232f;
       margin-bottom: 24px;
+      text-align: center;
+
+      @include screen-max-width-991 {
+        width: 60%;
+        margin: 0 auto 12px;
+      }
     }
     .P-blue-area {
       background: #0148ff;
@@ -120,10 +154,29 @@
       p {
         color: #ffffff;
         text-align: center;
+        @include screen-max-width-991 {
+          text-align: left;
+        }
       }
       .P-counts {
         div {
           text-align: center;
+          @include screen-max-width-607 {
+            h5 {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 36px;
+              text-align: center;
+              color: #ffffff;
+            }
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              text-align: center;
+              color: #ffffff;
+            }
+          }
         }
         p {
           font-size: 20px;
@@ -148,7 +201,7 @@
             width: 100%;
           }
           h5 {
-            font-weight: 500;
+            font-weight: 600;
             font-size: 20px;
             line-height: 30px;
             color: #23232f;

@@ -38,7 +38,7 @@ const NewsSection = () => {
         <p>{t("We_work-text")}</p>
       </div>
       <div className="P-slider-section">
-        <div className="G-container">
+        <div className="G-container ">
           <MentionSection />
         </div>
       </div>

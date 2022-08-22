@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       </div>
       <div className="P-section G-align-center G-flex-column">
-        <h4>{t("Brand_Way-text")}</h4>
+        <h4 className="G-container">{t("Brand_Way-text")}</h4>
         <div className="P-gray-area">
           <div className="G-container">
             <div className=" G-flex-wrap  G-justify-center P-flex-area">
@@ -90,8 +90,8 @@ const Home = () => {
                 <p>{t("The_digital_world-text")}</p>
               </div>
               <div className="P-card">
-                <h5>{t("Effective_Solutions-text")}</h5>
-                <p>{t("Based_on_research-text")}</p>
+                <h5>{t("Targeted_Results-text")}</h5>
+                <p>{t("We_make_your_success-text")}</p>
               </div>
             </div>
           </div>

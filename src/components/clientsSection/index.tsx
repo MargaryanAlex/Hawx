@@ -36,7 +36,11 @@ const ClintsSection = () => {
       <p>{t("Clients-text")}</p>
       <div className="P-logos G-container">
         {clientsLogos.map((item, index) => {
-          return <img src={item} alt="Logo" key={item + index} />;
+          return (
+            <div key={item + index}>
+              <img src={item} alt="Logo" />
+            </div>
+          );
         })}
       </div>
       <button>

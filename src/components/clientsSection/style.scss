@@ -6,9 +6,13 @@
   align-items: center;
   gap: 35px;
   padding-bottom: 100px;
+  @include screen-max-width-991 {
+    gap: 10px;
+    padding-bottom: 58px;
+  }
   p {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .P-logos {
     display: flex;
@@ -18,12 +22,17 @@
     gap: 30px;
     row-gap: 10px;
     @include screen-max-width-991 {
-      gap: 10px;
+      gap: 0;
+      justify-content: center;
+      div {
+        width: 33.333%;
+        text-align: center;
+        padding: 14px;
+      }
     }
     img {
       height: fit-content;
       @include screen-max-width-991 {
-        height: 20px;
       }
     }
   }

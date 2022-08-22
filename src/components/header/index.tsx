@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import "./style.scss";
 import logo from "src/assets/img/logo.svg";
 import logo_white from "src/assets/img/header/logo_white.png";
-import menu from "src/assets/img/header/menu.png";
-import close from "src/assets/img/header/close.png";
+import menu from "src/assets/img/header/menu.svg";
+import close from "src/assets/img/header/close.svg";
 import flagUK from "src/assets/img/header/Flag_UK.svg";
 import { navList } from "src/router";
 import { useState } from "react";
@@ -114,17 +114,21 @@ const Header = () => {
               </p>
               <ul className={onHover.selector ? "active" : ""}>
                 {options.map((item, index) => {
-                  return (
-                    <li
-                      key={item.title + index}
-                      onClick={() => {
-                        setSelected(item);
-                      }}
-                    >
-                      {" "}
-                      {item.title} <img src={item.icon} alt="flag" />
-                    </li>
-                  );
+                  if (item.title !== selected.title) {
+                    return (
+                      <li
+                        key={item.title + index}
+                        onClick={() => {
+                          setSelected(item);
+                        }}
+                      >
+                        {" "}
+                        {item.title} <img src={item.icon} alt="flag" />
+                      </li>
+                    );
+                  } else {
+                    return null;
+                  }
                 })}
               </ul>
             </div>
@@ -248,18 +252,22 @@ const Header = () => {
                   </p>
                   <ul className={onHover.selector ? "active" : ""}>
                     {options.map((item, index) => {
-                      return (
-                        <li
-                          key={item.title + index}
-                          onClick={() => {
-                            setSelected(item);
-                            setOnHover({ ...onHover, burgerMenu: false });
-                          }}
-                        >
-                          {" "}
-                          {item.title} <img src={item.icon} alt="flag" />
-                        </li>
-                      );
+                      if (item.title !== selected.title) {
+                        return (
+                          <li
+                            key={item.title + index}
+                            onClick={() => {
+                              setSelected(item);
+                              setOnHover({ ...onHover, burgerMenu: false });
+                            }}
+                          >
+                            {" "}
+                            {item.title} <img src={item.icon} alt="flag" />
+                          </li>
+                        );
+                      } else {
+                        return null;
+                      }
                     })}
                   </ul>
                 </div>

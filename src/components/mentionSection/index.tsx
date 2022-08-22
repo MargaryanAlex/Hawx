@@ -46,27 +46,51 @@ const MentionSection = () => {
     ],
   };
   return (
-    <div>
-      <Slider {...settings}>
-        {Object.values(jsonFile.mentions).map((item, index) => {
-          return (
-            <div className="P-slide" key={item.name + index}>
-              <div className="P-card">
-                <img src={item.img} alt="pic" />
-                <p className="P-content">
-                  {t(`mentions.mention${index}.content`)}
-                </p>
-                <div className="P-name">
-                  {t(`mentions.mention${index}.name`)}
-                </div>
-                <div className="P-role">
-                  {t(`mentions.mention${index}.role`)}
+    <div className="P-mentions-section">
+      <div className="G-web">
+        <Slider {...settings}>
+          {Object.values(jsonFile.mentions).map((item, index) => {
+            return (
+              <div className="P-slide" key={item.name + index}>
+                <div className="P-card">
+                  <img src={item.img} alt="pic" />
+                  <p className="P-content">
+                    {t(`mentions.mention${index}.content`)}
+                  </p>
+                  <div className="P-name">
+                    {t(`mentions.mention${index}.name`)}
+                  </div>
+                  <div className="P-role">
+                    {t(`mentions.mention${index}.role`)}
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </Slider>
+            );
+          })}
+        </Slider>
+      </div>
+      <div className="G-mobile">
+        <div className="P-container ">
+          {Object.values(jsonFile.mentions).map((item, index) => {
+            return (
+              <div className="P-slide" key={item.name + index}>
+                <div className="P-card">
+                  <img src={item.img} alt="pic" />
+                  <p className="P-content">
+                    {t(`mentions.mention${index}.content`)}
+                  </p>
+                  <div className="P-name">
+                    {t(`mentions.mention${index}.name`)}
+                  </div>
+                  <div className="P-role">
+                    {t(`mentions.mention${index}.role`)}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };

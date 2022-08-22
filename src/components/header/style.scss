@@ -26,15 +26,18 @@
           position: absolute;
           white-space: nowrap;
           transition: all 0.4s ease-in-out;
-          border-radius: 15px;
-          right: -100%;
-          box-shadow: 0px 0px 75px 3px rgba(0, 0, 0, 0.2);
+          box-sizing: border-box;
+          border: 0px solid #dbdbdb;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+          border-radius: 4px;
+          left: 0;
           ul {
             display: block;
             transition: all 0.4s ease-in-out;
             max-height: 0;
             overflow: hidden;
             width: fit-content;
+
             li {
               margin: 3px auto;
             }
@@ -43,18 +46,19 @@
         .P-options.active {
           max-height: 250px;
           padding: 15px;
+          border-width: 1px;
           ul {
             max-height: 250px;
           }
-          &:before {
-            content: "\25B2";
-            color: #ffffff;
-            position: absolute;
-            z-index: 1;
-            top: -14px;
-            right: 0;
-            left: 60%;
-          }
+          // &:before {
+          //   content: "\25B2";
+          //   color: #ffffff;
+          //   position: absolute;
+          //   z-index: 1;
+          //   top: -14px;
+          //   right: 0;
+          //   left: 60%;
+          // }
         }
       }
     }
@@ -74,29 +78,42 @@
     background: #0148ff;
     padding: 20px;
     padding-right: 0;
+    overflow-y: auto;
+    * {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: #ffffff;
+    }
+
     .P-selector {
       ul {
         background: #0148ff !important;
+        * {
+          font-size: 20px;
+        }
       }
     }
     * {
       color: white;
     }
     .P-top {
-      position: static;
+      position: fixed;
+      width: calc(100% - 40px);
+
       top: 0px;
       height: 25px;
-      padding-right: 20px;
+      padding: 0 20px 0 0;
+      margin: 20px;
       align-items: center;
     }
     .P-nav {
       height: calc(100% - 25px);
       display: flex;
-      overflow-y: auto;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       text-align: center;
+      margin-top: 108px;
       .P-navigation {
         margin-bottom: 40px;
       }
@@ -105,6 +122,14 @@
       }
       li a {
         margin-top: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #ffffff;
       }
       .P-dropdown {
         position: relative;
@@ -144,14 +169,16 @@
       ul {
         position: absolute;
         background: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0px 0px 75px 3px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
         transition: all 0.4s ease-in-out;
         max-height: 0;
         overflow: hidden;
         width: fit-content;
+        border: 0px solid #dbdbdb;
       }
       ul.active {
+        border-width: 1px;
         max-height: 80px;
         padding: 10px;
       }
