@@ -1,5 +1,12 @@
+@import "src/assets/style/index.scss";
+
 .P-contacts {
   padding-bottom: 197px;
+  @include screen-max-width-991 {
+    * {
+      text-align: left !important;
+    }
+  }
   h2 {
     font-weight: 500;
     font-size: 32px;
@@ -8,6 +15,9 @@
     color: #23232f;
     margin-top: 86px;
     margin-bottom: 59px;
+    @include screen-max-width-991 {
+      margin: 32px 0;
+    }
   }
   h3 {
     font-weight: 600;
@@ -34,6 +44,10 @@
     max-width: 360px;
     margin: 0 auto 39px;
     border: 1px solid #23232f;
+    @include screen-max-width-991 {
+      width: 100%;
+      max-width: none;
+    }
   }
   h4 {
     font-weight: 600;
@@ -47,5 +61,8 @@
     margin: 0 auto;
     justify-content: center;
     gap: 24px;
+    @include screen-max-width-991 {
+      justify-content: flex-start;
+    }
   }
 }

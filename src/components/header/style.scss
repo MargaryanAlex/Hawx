@@ -1,5 +1,9 @@
+@import "src/assets/style/index.scss";
 .P-header {
   padding: 40px 0 40px;
+  @include screen-max-width-991 {
+    padding: 20px 0;
+  }
   width: 100%;
   z-index: 9999;
   * {

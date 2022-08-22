@@ -1,13 +1,23 @@
+@import "src/assets/style/index.scss";
+
 .P-about-us {
   .P-about-us-text {
     margin-top: 90px;
     gap: 190px;
     row-gap: 120px;
     padding-bottom: 60px;
+    @include screen-max-width-767 {
+      flex-direction: column;
+      margin-top: 44px;
+      row-gap: 58px;
+    }
     .P-about-card {
       width: calc(50% - 95px);
+      @include screen-max-width-767 {
+        width: 100%;
+      }
       h3 {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 24px;
         line-height: 36px;
         margin-bottom: 35px;
@@ -61,11 +71,20 @@
       width: calc(100% + 18px);
       justify-content: center;
       row-gap: 56px;
+      @include screen-max-width-767 {
+      }
     }
     .P-photo-card {
       width: 25%;
       padding: 9px;
+      min-width: fit-content;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include screen-max-width-582 {
+        width: 100%;
+      }
 
       .P-photo {
         display: block;
