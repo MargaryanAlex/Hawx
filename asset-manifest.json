@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hawx/static/css/main.e63634c7.css",
-    "main.js": "/Hawx/static/js/main.44633011.js",
+    "main.css": "/Hawx/static/css/main.1507a6a3.css",
+    "main.js": "/Hawx/static/js/main.d2dde33f.js",
     "static/js/787.8f116df5.chunk.js": "/Hawx/static/js/787.8f116df5.chunk.js",
     "static/media/ciwinz.svg": "/Hawx/static/media/ciwinz.f3d75026a5d7fe31d517cde7df3cafa2.svg",
     "static/media/gamblecity.svg": "/Hawx/static/media/gamblecity.ab250752b79ee7b85be485560153da15.svg",
@@ -48,12 +48,12 @@
     "static/media/Facebook.svg": "/Hawx/static/media/Facebook.8c7dd28acf06754535ad152fc7384ad3.svg",
     "static/media/fb.svg": "/Hawx/static/media/fb.ef56160cf804bc6f533b01936294e981.svg",
     "index.html": "/Hawx/index.html",
-    "main.e63634c7.css.map": "/Hawx/static/css/main.e63634c7.css.map",
-    "main.44633011.js.map": "/Hawx/static/js/main.44633011.js.map",
+    "main.1507a6a3.css.map": "/Hawx/static/css/main.1507a6a3.css.map",
+    "main.d2dde33f.js.map": "/Hawx/static/js/main.d2dde33f.js.map",
     "787.8f116df5.chunk.js.map": "/Hawx/static/js/787.8f116df5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e63634c7.css",
-    "static/js/main.44633011.js"
+    "static/css/main.1507a6a3.css",
+    "static/js/main.d2dde33f.js"
   ]
 }
