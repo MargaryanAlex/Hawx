@@ -11,26 +11,6 @@ const leadership = [
   },
   {
     img: "",
-    name: "Giorgi_Tsutskiridze-text",
-    role: "Co-Founder_&_Chief_Executive_Officer-text",
-  },
-  {
-    img: "",
-    name: "Giorgi_Tsutskiridze-text",
-    role: "Co-Founder_&_Chief_Executive_Officer-text",
-  },
-  {
-    img: "",
-    name: "Giorgi_Tsutskiridze-text",
-    role: "Co-Founder_&_Chief_Executive_Officer-text",
-  },
-  {
-    img: "",
-    name: "Giorgi_Tsutskiridze-text",
-    role: "Co-Founder_&_Chief_Executive_Officer-text",
-  },
-  {
-    img: "",
     name: "Giorgi_Samkharadze-text",
     role: "Co-Founder_&_Chief_Operating_Officer-text",
   },
@@ -78,6 +58,9 @@ const leadership = [
 ];
 const AboutUs = () => {
   const { t } = useTranslation();
+  const goTo: (url: string) => void = (url) => {
+    (window.open(url, "_blank") as Window).focus();
+  };
   return (
     <div className="P-about-us">
       <div className="P-about-us-text G-flex-wrap G-container">
@@ -86,9 +69,27 @@ const AboutUs = () => {
           <p>{t("While_being-text")}</p>
           <span>{t("FOLLOW-text")}</span>
           <div className="G-flex P-icons">
-            <img src={fb} alt="facebook" />
-            <img src={linkedin} alt="linkedin" />
-            <img src={inst} alt="instagram" />
+            <img
+              src={fb}
+              alt="facebook"
+              onClick={() => {
+                goTo("https://www.facebook.com/HawX.io");
+              }}
+            />
+            <img
+              src={linkedin}
+              alt="linkedin"
+              onClick={() => {
+                goTo("https://www.linkedin.com/company/hawx/");
+              }}
+            />
+            <img
+              src={inst}
+              alt="instagram"
+              onClick={() => {
+                goTo("https://www.instagram.com/hawx.io/");
+              }}
+            />
           </div>
         </div>
         <div className="P-about-card">

@@ -15,15 +15,29 @@ const Footer = () => {
   };
   return (
     <footer className="P-footer">
-      <div className="P-contacts">
+      <div className="P-contacts-area">
         <h3>{t("GET_START-text")}</h3>
         <p>{t("DONT_HESITATE-text")}</p>
         <div className="P-btns">
-          <button>
+          <button
+            onClick={() => {
+              window.location = "tel:+995595770073" as (string | Location) &
+                Location;
+
+              navigator.clipboard.writeText("info@hawx.io ");
+            }}
+          >
             <img src={phone} alt="phone" />
             {t("PHONE-text")}
           </button>
-          <button>
+          <button
+            onClick={() => {
+              window.location = "mailto:info@hawx.io" as (string | Location) &
+                Location;
+
+              navigator.clipboard.writeText("info@hawx.io ");
+            }}
+          >
             <img src={envelope} alt="Envelope" />
             {t("EMAIL-text")}
           </button>
@@ -114,9 +128,27 @@ const Footer = () => {
               <div className="P-social-icons">
                 <p>{t("FOLLOW-text")}</p>
                 <div className="P-icons">
-                  <img src={fb} alt="Facebook" />
-                  <img src={linkdin} alt="Linkdin" />
-                  <img src={insta} alt="Instagram" />
+                  <img
+                    src={fb}
+                    alt="Facebook"
+                    onClick={() => {
+                      goTo("https://www.facebook.com/HawX.io");
+                    }}
+                  />
+                  <img
+                    src={linkdin}
+                    alt="Linkdin"
+                    onClick={() => {
+                      goTo("https://www.linkedin.com/company/hawx/");
+                    }}
+                  />
+                  <img
+                    src={insta}
+                    alt="Instagram"
+                    onClick={() => {
+                      goTo("https://www.instagram.com/hawx.io/");
+                    }}
+                  />
                 </div>
               </div>
             </div>

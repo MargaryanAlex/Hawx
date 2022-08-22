@@ -15,7 +15,7 @@
   * {
     color: #ffffff;
   }
-  .P-contacts {
+  .P-contacts-area {
     width: 100%;
     text-align: center;
     height: 250px;
@@ -28,11 +28,16 @@
     color: #ffffff;
     h3 {
       font-size: $font-size-24;
+      font-weight: 500;
+      line-height: 36px;
+      /* identical to box height */
+      color: #ffffff;
     }
     p {
       font-size: $font-size-16;
       width: 60%;
       min-width: 240px;
+      color: #ffffff;
     }
     .P-btns {
       display: flex;
