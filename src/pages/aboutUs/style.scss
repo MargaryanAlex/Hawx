@@ -41,7 +41,10 @@
         gap: 13px;
       }
       .P-numbers {
-        gap: 35px;
+        gap: 37px;
+        @include screen-max-width-440 {
+          gap: 25px;
+        }
         p {
           font-weight: 600;
           font-size: 24px;
@@ -71,25 +74,33 @@
       width: calc(100% + 18px);
       justify-content: center;
       row-gap: 56px;
+      padding-bottom: 75px;
       @include screen-max-width-767 {
       }
     }
     .P-photo-card {
       width: 25%;
       padding: 9px;
-      min-width: fit-content;
+
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include screen-max-width-991 {
+        width: 33.3333%;
+      }
+      @include screen-max-width-671 {
+        width: 50%;
+      }
       @include screen-max-width-582 {
         width: 100%;
       }
 
       .P-photo {
         display: block;
-        width: 255px;
-        height: 268px;
+        width: 100%;
+        max-width: 250px;
+        min-height: 268px;
         left: 184px;
         top: 1067px;
         background: #d9d9d9;

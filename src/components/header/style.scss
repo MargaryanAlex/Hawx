@@ -39,16 +39,16 @@
             width: fit-content;
 
             li {
-              margin: 3px auto;
+              margin: 16px auto;
             }
           }
         }
         .P-options.active {
-          max-height: 250px;
-          padding: 15px;
+          max-height: 350px;
+          padding: 0 20px;
           border-width: 1px;
           ul {
-            max-height: 250px;
+            max-height: 350px;
           }
           // &:before {
           //   content: "\25B2";
@@ -122,7 +122,7 @@
       }
       li a {
         margin-top: 0;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 14px;
         line-height: 21px;
         /* identical to box height */

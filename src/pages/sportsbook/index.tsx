@@ -2,19 +2,19 @@ import "./style.scss";
 import jsonFile from "src/i18n/locales/en/translations.json";
 import { useTranslation } from "react-i18next";
 import logo from "src/assets/img/solutions/sportsbook.png";
-import { useState } from "react";
+// import { useState } from "react";
 const Sportsbook = () => {
-  const [currentTab, setCurrentTab] = useState("Daily Operations");
-  const [currentIndex, setCurrenntIndex] = useState(0);
+  // const [currentTab, setCurrentTab] = useState("Daily Operations");
+  // const [0, setCurrenntIndex] = useState(0);
   const { t } = useTranslation();
   return (
     <div className="G-solution P-sportsbook">
       <div className="G-solution-header P-sportsbook-header ">
         <div className="G-container">
           <div>
-            <h3>{t("sportsbook_Manager-text")}</h3>
-            <p>{t("All_sportsbooks-text")}</p>
-            <p>{t("HawX_builds-text")}</p>
+            <h3>{t("Be_always_on_top-text")}</h3>
+            <p>{t("We_provide_Risk_Management-text")}</p>
+            <p>{t("We_have_set-text")}</p>
           </div>
           <img src={logo} alt="logo" />
         </div>
@@ -47,7 +47,7 @@ const Sportsbook = () => {
             <img
               src={
                 jsonFile.solutions.sportsbook[
-                  `tab${currentIndex}` as keyof typeof jsonFile.solutions.sportsbook
+                  `tab${0}` as keyof typeof jsonFile.solutions.sportsbook
                 ].icon
               }
               alt=""
@@ -57,7 +57,7 @@ const Sportsbook = () => {
             <ul>
               {Object.values(
                 jsonFile.solutions.sportsbook[
-                  `tab${currentIndex}` as keyof typeof jsonFile.solutions.sportsbook
+                  `tab${0}` as keyof typeof jsonFile.solutions.sportsbook
                 ].text
               ).map((item, index) => {
                 return (
@@ -65,7 +65,7 @@ const Sportsbook = () => {
                     {item.content.length > 0 && (
                       <p>
                         {t(
-                          `solutions.sportsbook.tab${currentIndex}.text.text${index}.content`
+                          `solutions.sportsbook.tab${0}.text.text${index}.content`
                         )}
                       </p>
                     )}

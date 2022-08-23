@@ -6,7 +6,7 @@ import insta from "src/assets/img/footer/instagram.svg";
 import linkdin from "src/assets/img/footer/linkedin.svg";
 import logo from "src/assets/img/footer/logo.svg";
 import "./style.scss";
-import { companyList, legalList, solutionsList } from "src/router";
+import { companyList, solutionsList } from "src/router";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   const { t } = useTranslation();
@@ -96,7 +96,7 @@ const Footer = () => {
                 );
               })}
             </div>
-            <div className="P-sections">
+            {/* <div className="P-sections">
               <h4>{t("LEGAL-text")}</h4>
               {legalList.map((item, index) => {
                 return (
@@ -105,7 +105,7 @@ const Footer = () => {
                   </NavLink>
                 );
               })}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -118,6 +118,18 @@ const Footer = () => {
               <div className="P-sections">
                 <h4>{t("Solutions-text")}</h4>
                 {solutionsList.map((item, index) => {
+                  return (
+                    <NavLink to={item.path as string} key={item.title + index}>
+                      {t(item.title)}
+                    </NavLink>
+                  );
+                })}
+              </div>
+            </div>
+            <div className="P-side">
+              <div className="P-sections">
+                <h4>{t("Company-text")}</h4>
+                {companyList.map((item, index) => {
                   return (
                     <NavLink to={item.path as string} key={item.title + index}>
                       {t(item.title)}
@@ -151,20 +163,7 @@ const Footer = () => {
                   />
                 </div>
               </div>
-            </div>
-            <div className="P-side">
-              <div className="P-sections">
-                <h4>{t("Company-text")}</h4>
-                {companyList.map((item, index) => {
-                  return (
-                    <NavLink to={item.path as string} key={item.title + index}>
-                      {t(item.title)}
-                    </NavLink>
-                  );
-                })}
-              </div>
-
-              <div className="P-sections">
+              {/* <div className="P-sections">
                 <h4>{t("LEGAL-text")}</h4>
                 {legalList.map((item, index) => {
                   return (
@@ -173,7 +172,7 @@ const Footer = () => {
                     </NavLink>
                   );
                 })}
-              </div>
+              </div> */}
             </div>
           </div>
 

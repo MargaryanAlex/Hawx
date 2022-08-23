@@ -28,7 +28,7 @@
     color: #ffffff;
     h3 {
       font-size: $font-size-24;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 36px;
       /* identical to box height */
       color: #ffffff;
@@ -80,10 +80,10 @@
         display: flex;
         flex-direction: column;
         gap: 11px;
-        font-weight: 500;
+        font-weight: 600;
         .P-icons {
           display: flex;
-          gap: 21px;
+          gap: 15px;
         }
       }
       .logo {
@@ -103,7 +103,7 @@
       display: flex;
     }
     .P-footer-logo {
-      width: 50%;
+      width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -126,7 +126,7 @@
       font-size: $font-size-14;
     }
     .P-footer-navigation {
-      width: 50%;
+      width: 40%;
       display: flex;
       justify-content: space-between;
       .P-sections {
