@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "/Hawx/static/css/main.430a9bef.css",
-    "main.js": "/Hawx/static/js/main.7adedbf4.js",
+    "main.js": "/Hawx/static/js/main.416978bc.js",
     "static/js/787.8f116df5.chunk.js": "/Hawx/static/js/787.8f116df5.chunk.js",
     "static/media/5U1A0086-copy.jpg": "/Hawx/static/media/5U1A0086-copy.76b9680ab1b425976fd1.jpg",
-    "static/media/5U1A0019.jpg": "/Hawx/static/media/5U1A0019.a0a490ebeda94c94bd39.jpg",
     "static/media/5U1A0070.jpg": "/Hawx/static/media/5U1A0070.38c9bb4370fb9ce2ffe3.jpg",
     "static/media/ciwinz.svg": "/Hawx/static/media/ciwinz.f3d75026a5d7fe31d517cde7df3cafa2.svg",
     "static/media/gamblecity.svg": "/Hawx/static/media/gamblecity.ab250752b79ee7b85be485560153da15.svg",
@@ -21,6 +20,7 @@
     "static/media/financial.png": "/Hawx/static/media/financial.fc92f8d6e5a98aa95a93.png",
     "static/media/design.png": "/Hawx/static/media/design.f9f1a8dafbdc2ea8aebc.png",
     "static/media/fortunabet.svg": "/Hawx/static/media/fortunabet.d674f76f22671b41e12815dcf5cc8f6f.svg",
+    "static/media/5U1A0019.jpg": "/Hawx/static/media/5U1A0019.cbd8ed11e857cba4e06d.jpg",
     "static/media/betbet.svg": "/Hawx/static/media/betbet.0f5a3d304a81732245923d9c01cde15f.svg",
     "static/media/transwayz.svg": "/Hawx/static/media/transwayz.6a9564f363adf37af2eb65c6dc022347.svg",
     "static/media/medina.svg": "/Hawx/static/media/medina.7fee5725121d9caf4cfe757e697d14db.svg",
@@ -53,12 +53,13 @@
     "index.html": "/Hawx/index.html",
     "static/media/menu.svg": "/Hawx/static/media/menu.9dd21330e169bfa3c90f125d24ff572e.svg",
     "static/media/close.svg": "/Hawx/static/media/close.a7a9167bc2eeaeacd968485b35486261.svg",
+    "static/media/Flag_Ru.svg": "/Hawx/static/media/Flag_Ru.7a344b3ceb91a2edf4cebf369837d40a.svg",
     "main.430a9bef.css.map": "/Hawx/static/css/main.430a9bef.css.map",
-    "main.7adedbf4.js.map": "/Hawx/static/js/main.7adedbf4.js.map",
+    "main.416978bc.js.map": "/Hawx/static/js/main.416978bc.js.map",
     "787.8f116df5.chunk.js.map": "/Hawx/static/js/787.8f116df5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.430a9bef.css",
-    "static/js/main.7adedbf4.js"
+    "static/js/main.416978bc.js"
   ]
 }
