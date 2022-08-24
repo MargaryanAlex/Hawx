@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/Hawx/static/css/main.430a9bef.css",
-    "main.js": "/Hawx/static/js/main.416978bc.js",
+    "main.css": "/Hawx/static/css/main.7081d102.css",
+    "main.js": "/Hawx/static/js/main.6afd1e4d.js",
     "static/js/787.8f116df5.chunk.js": "/Hawx/static/js/787.8f116df5.chunk.js",
-    "static/media/5U1A0086-copy.jpg": "/Hawx/static/media/5U1A0086-copy.76b9680ab1b425976fd1.jpg",
-    "static/media/5U1A0070.jpg": "/Hawx/static/media/5U1A0070.38c9bb4370fb9ce2ffe3.jpg",
     "static/media/ciwinz.svg": "/Hawx/static/media/ciwinz.f3d75026a5d7fe31d517cde7df3cafa2.svg",
     "static/media/gamblecity.svg": "/Hawx/static/media/gamblecity.ab250752b79ee7b85be485560153da15.svg",
     "static/media/map.svg": "/Hawx/static/media/map.d5c51d5332923de8d957d0d829035dac.svg",
@@ -12,17 +10,26 @@
     "static/media/spinbookie.svg": "/Hawx/static/media/spinbookie.c3993be9ba9929b38f87e4dafa44c484.svg",
     "static/media/fortunetowin.svg": "/Hawx/static/media/fortunetowin.7eb5fb4f00952f10c054afed0aa622e0.svg",
     "static/media/product.png": "/Hawx/static/media/product.1acf65ca77947071a4e8.png",
+    "static/media/vov.png": "/Hawx/static/media/vov.deb65a641aa73b08f210.png",
     "static/media/crm.png": "/Hawx/static/media/crm.0601dcc767a6022c30b5.png",
     "static/media/website.png": "/Hawx/static/media/website.8e74ffcc8e223cb666bf.png",
     "static/media/fraud.png": "/Hawx/static/media/fraud.4b71ba61ea1fba8b4242.png",
+    "static/media/avo.png": "/Hawx/static/media/avo.115ca594a8573ad3781a.png",
     "static/media/7kings.svg": "/Hawx/static/media/7kings.204a1e862cf92ab687f765a718873b5c.svg",
+    "static/media/5U1A9994.jpg": "/Hawx/static/media/5U1A9994.388b8982ebf5461ddf7d.jpg",
     "static/media/sportsbook.png": "/Hawx/static/media/sportsbook.7e39a8d4c24cd640ff54.png",
     "static/media/financial.png": "/Hawx/static/media/financial.fc92f8d6e5a98aa95a93.png",
     "static/media/design.png": "/Hawx/static/media/design.f9f1a8dafbdc2ea8aebc.png",
+    "static/media/misho.jpg": "/Hawx/static/media/misho.9cd10d11a318ff4f7f8b.jpg",
+    "static/media/5U1A0086-copy.jpg": "/Hawx/static/media/5U1A0086-copy.1b402da3a6b9c54acb3e.jpg",
     "static/media/fortunabet.svg": "/Hawx/static/media/fortunabet.d674f76f22671b41e12815dcf5cc8f6f.svg",
-    "static/media/5U1A0019.jpg": "/Hawx/static/media/5U1A0019.cbd8ed11e857cba4e06d.jpg",
+    "static/media/5U1A0019.jpg": "/Hawx/static/media/5U1A0019.85bd9dbbafac7205b856.jpg",
+    "static/media/nadusa.jpg": "/Hawx/static/media/nadusa.7b10afe350573a28acd8.jpg",
     "static/media/betbet.svg": "/Hawx/static/media/betbet.0f5a3d304a81732245923d9c01cde15f.svg",
+    "static/media/IMG_4169.jpg": "/Hawx/static/media/IMG_4169.438909853cb147faa50a.jpg",
+    "static/media/5U1A0070.jpg": "/Hawx/static/media/5U1A0070.d4643d0c732be64b21c1.jpg",
     "static/media/transwayz.svg": "/Hawx/static/media/transwayz.6a9564f363adf37af2eb65c6dc022347.svg",
+    "static/media/rafael.jpg": "/Hawx/static/media/rafael.856ddab841782b4d74a5.jpg",
     "static/media/medina.svg": "/Hawx/static/media/medina.7fee5725121d9caf4cfe757e697d14db.svg",
     "static/media/pnxbet.svg": "/Hawx/static/media/pnxbet.016913a143889ed0a9485bbbd0713ac6.svg",
     "static/media/bet90.svg": "/Hawx/static/media/bet90.c8c9a31c34093885635ab5eb19255ce0.svg",
@@ -54,12 +61,12 @@
     "static/media/menu.svg": "/Hawx/static/media/menu.9dd21330e169bfa3c90f125d24ff572e.svg",
     "static/media/close.svg": "/Hawx/static/media/close.a7a9167bc2eeaeacd968485b35486261.svg",
     "static/media/Flag_Ru.svg": "/Hawx/static/media/Flag_Ru.7a344b3ceb91a2edf4cebf369837d40a.svg",
-    "main.430a9bef.css.map": "/Hawx/static/css/main.430a9bef.css.map",
-    "main.416978bc.js.map": "/Hawx/static/js/main.416978bc.js.map",
+    "main.7081d102.css.map": "/Hawx/static/css/main.7081d102.css.map",
+    "main.6afd1e4d.js.map": "/Hawx/static/js/main.6afd1e4d.js.map",
     "787.8f116df5.chunk.js.map": "/Hawx/static/js/787.8f116df5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.430a9bef.css",
-    "static/js/main.416978bc.js"
+    "static/css/main.7081d102.css",
+    "static/js/main.6afd1e4d.js"
   ]
 }
