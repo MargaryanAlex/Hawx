@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import PagesLayout from "./layout/pagesLayout";
 import SolutionsLayout from "./layout/solutionsLayout";
@@ -36,6 +36,7 @@ function App() {
               />
             );
           })}
+          <Route path="*" element={<Navigate to="/" replace />} />{" "}
         </Routes>
       </div>
     </BrowserRouter>
