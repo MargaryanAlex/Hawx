@@ -6,7 +6,7 @@ import { IRoute, pagesRouteList, solutionsRouteList } from "./router";
 
 function App() {
   return (
-    <BrowserRouter basename="/Hawx">
+    <BrowserRouter>
       <h1>HAWX</h1>
       <div className="App">
         <Routes>
