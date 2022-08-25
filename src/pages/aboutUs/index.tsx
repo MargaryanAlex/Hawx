@@ -3,55 +3,66 @@ import { useTranslation } from "react-i18next";
 import fb from "src/assets/img/aboutUs/Facebook.svg";
 import inst from "src/assets/img/aboutUs/Instagram.svg";
 import linkedin from "src/assets/img/aboutUs/Linkedin.svg";
+import natia from "src/assets/img/aboutUs/5U1A0019.jpg";
+import gela from "src/assets/img/aboutUs/5U1A0070.jpg";
+import gt from "src/assets/img/aboutUs/5U1A0086-copy.jpg";
+import gs from "src/assets/img/aboutUs/IMG_4169.jpg";
+import beka from "src/assets/img/aboutUs/5U1A9994.jpg";
+import misho from "src/assets/img/aboutUs/misho.jpg";
+import nadusa from "src/assets/img/aboutUs/nadusa.jpg";
+import rafael from "src/assets/img/aboutUs/rafael.jpg";
+import avo from "src/assets/img/aboutUs/avo.png";
+import vov from "src/assets/img/aboutUs/vov.png";
+import { useEffect } from "react";
 const leadership = [
   {
-    img: "",
+    img: gt,
     name: "Giorgi_Tsutskiridze-text",
     role: "Co-Founder_&_Chief_Executive_Officer-text",
   },
   {
-    img: "",
+    img: gs,
     name: "Giorgi_Samkharadze-text",
     role: "Co-Founder_&_Chief_Operating_Officer-text",
   },
 
   {
-    img: "",
+    img: rafael,
     name: "Rafael_Gyulnazaryan-text",
     role: "Co-Founder_&_Chief_Technology_Officer-text",
   },
   {
-    img: "",
+    img: gela,
     name: "Gela_Makharadze-text",
     role: "Chief_Financial_Officer-text",
   },
   {
-    img: "",
+    img: beka,
     name: "Beka_Chikobava-text",
     role: "Head_of_CRM-text",
   },
   {
-    img: "",
+    img: natia,
     name: "Natia_Zedelashvili-text",
     role: "Head_of_Design-text",
   },
   {
-    img: "",
+    img: nadusa,
     name: "Giorgi_Nadaraia-text",
     role: "Head_of_Marketing-text",
   },
   {
-    img: "",
+    img: misho,
     name: "Mikheil_Gogitashvili-text",
     role: "Head_of_Products-text",
   },
   {
-    img: "",
+    img: vov,
     name: "Vova_Sardanyan-text",
     role: "Head_of_Project_Management-text",
   },
   {
-    img: "",
+    img: avo,
     name: "Avetik_Hasasyan-text",
     role: "Tech_Guru-text",
   },
@@ -61,6 +72,9 @@ const AboutUs = () => {
   const goTo: (url: string) => void = (url) => {
     (window.open(url, "_blank") as Window).focus();
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="P-about-us">
       <div className="P-about-us-text G-flex-wrap G-container">

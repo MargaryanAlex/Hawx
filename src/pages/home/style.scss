@@ -19,34 +19,38 @@
       padding-top: 20px;
       min-height: 295px;
       padding-bottom: 30px;
-      .G-container {
+      .P-solutions-container {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: calc(100% + 24px);
+        margin: 0 -12px;
         margin-top: -90px;
-        gap: calc((100% - (7 * 129px)) / 6);
-        @include screen-max-width-991 {
-          gap: calc((100% - (4 * 129px)) / 3);
-        }
-        @include screen-max-width-607 {
-          gap: calc((100% - (3 * 129px)) / 2);
-        }
-        @include screen-max-width-440 {
-          gap: calc((100% - (2 * 129px)) / 1);
-        }
+        // justify-content: center;
+        // gap: 20px;
+        // gap: calc((100% - (7 * 129px)) / 6);
+        // @include screen-max-width-991 {
+        //   gap: calc((100% - (4 * 129px)) / 3);
+        // }
+        // @include screen-max-width-607 {
+        //   gap: calc((100% - (3 * 129px)) / 2);
+        // }
+        // @include screen-max-width-440 {
+        //   gap: calc((100% - (2 * 129px)) / 1);
+        // }
       }
       .P-solution {
         display: flex;
-        width: 129px;
+        width: 14.28%;
         flex-direction: column;
         align-items: center;
-        padding: 12px 0;
+        padding: 12px;
         @include screen-max-width-991 {
-          // width: 25%;
+          width: 25%;
         }
         @include screen-max-width-607 {
-          // width: 50%;
+          width: 50%;
         }
         .P-solution-logo {
           width: 130px;

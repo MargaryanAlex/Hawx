@@ -12,10 +12,13 @@
       min-height: 583px;
       align-items: center;
       justify-content: space-between;
+      
       @include screen-max-width-991 {
         display: block;
         img {
           display: block;
+          width: auto;
+          height: auto;
           min-width: 290px;
           margin: 76px auto;
         }
@@ -102,7 +105,7 @@
       text-align: center;
       @include screen-max-width-991 {
         display: block;
-        width: 100%;
+        width: 60%;
         margin: 45px auto;
       }
     }
@@ -124,9 +127,13 @@
       h3,
       p {
         margin-bottom: 20px;
+        text-align: left;
       }
       ul {
         list-style: disc;
+        li {
+          text-align: left;
+        }
       }
     }
   }

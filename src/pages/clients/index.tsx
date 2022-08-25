@@ -15,6 +15,7 @@ import megabet from "src/assets/img/clientsLogo/megabet.svg";
 import transwayz from "src/assets/img/clientsLogo/transwayz.svg";
 import map from "src/assets/img/clientsLogo/map.svg";
 import "./style.scss";
+import { useEffect } from "react";
 
 const logos = [
   sorsx,
@@ -34,6 +35,9 @@ const logos = [
 
 const Clients = () => {
   const { t } = useTranslation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+  }, [])
   return (
     <div className="P-clients">
       <div className="G-container P-clients-top ">

@@ -2,13 +2,17 @@ import "./style.scss";
 import jsonFile from "src/i18n/locales/en/translations.json";
 import { useTranslation } from "react-i18next";
 import logo from "src/assets/img/solutions/crm.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+setInterval(()=>{},1100)
 const Crm = () => {
   const [currentTab, setCurrentTab] = useState(
     "Segmentation & Onboarding Optimization"
   );
   const [currentIndex, setCurrenntIndex] = useState(0);
   const { t } = useTranslation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+  }, [])
   return (
     <div className="G-solution P-crm">
       <div className="G-solution-header P-crm-header ">

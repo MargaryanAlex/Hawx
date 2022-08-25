@@ -9,6 +9,9 @@ const News = () => {
   const [width, setWidth] = useState<number>(window.innerWidth);
   const [count, setCount] = useState<number>(4);
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  useEffect(() => {
     window.addEventListener("resize", (e: Event) => {
       setWidth(window.innerWidth);
     });
@@ -26,6 +29,7 @@ const News = () => {
       window.removeEventListener("resize", (e: Event) => {});
       window.removeEventListener("scroll", (e: Event) => {});
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="P-news">

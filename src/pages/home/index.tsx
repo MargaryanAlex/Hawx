@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import ClintsSection from "src/components/clientsSection";
@@ -7,7 +7,20 @@ import { solutionsList } from "src/router";
 import "./style.scss";
 
 const Home = () => {
+  const div = useRef<HTMLDivElement | null>(null);
   const { t } = useTranslation();
+  const [width, setWidth] = useState(window.innerWidth);
+  const [cardWidth, setCardWidth] = useState<number | undefined>();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.addEventListener("resize", (e: Event) => {
+      setWidth(window.innerWidth);
+    });
+    setCardWidth(div.current?.clientWidth);
+  }, []);
+  useEffect(() => {
+    setCardWidth(div.current?.clientWidth);
+  }, [width]);
   return (
     <div className="P-homepage">
       <div className="G-container">
@@ -25,25 +38,30 @@ const Home = () => {
         </div>
         <div className="P-solutions-list">
           <div className="G-container">
-            {solutionsList.map((item) => {
-              return (
-                <NavLink
-                  to={item.path as string}
-                  key={item.path}
-                  className="P-solution"
-                >
-                  <div
-                    className="P-solution-logo"
-                    style={{
-                      background: item.color,
-                    }}
+            <div className="P-solutions-container">
+              {solutionsList.map((item) => {
+                return (
+                  <NavLink
+                    to={item.path as string}
+                    key={item.path}
+                    className="P-solution"
                   >
-                    <img src={item.icon} alt="logo" />
-                  </div>
-                  <p>{t(item.title)}</p>
-                </NavLink>
-              );
-            })}
+                    <div
+                      className="P-solution-logo"
+                      ref={div}
+                      style={{
+                        background: item.color,
+                        width: "100%",
+                        height: cardWidth,
+                      }}
+                    >
+                      <img src={item.icon} alt="logo" />
+                    </div>
+                    <p>{t(item.title)}</p>
+                  </NavLink>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

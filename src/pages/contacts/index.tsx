@@ -3,11 +3,15 @@ import { useTranslation } from "react-i18next";
 import fb from "src/assets/img/aboutUs/Facebook.svg";
 import inst from "src/assets/img/aboutUs/Instagram.svg";
 import linkedin from "src/assets/img/aboutUs/Linkedin.svg";
+import { useEffect } from "react";
 const Contacts = () => {
   const { t } = useTranslation();
   const goTo: (url: string) => void = (url) => {
     (window.open(url, "_blank") as Window).focus();
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+  }, [])
   return (
     <div className="P-contacts ">
       <div className="G-container">

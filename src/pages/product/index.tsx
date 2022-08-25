@@ -2,11 +2,14 @@ import "./style.scss";
 import jsonFile from "src/i18n/locales/en/translations.json";
 import { useTranslation } from "react-i18next";
 import logo from "src/assets/img/solutions/product.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Product = () => {
   const [currentTab, setCurrentTab] = useState("Product Planning & Roadmap");
   const [currentIndex, setCurrenntIndex] = useState(0);
   const { t } = useTranslation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+  }, [])
   return (
     <div className="G-solution P-product">
       <div className="G-solution-header P-product-header ">
