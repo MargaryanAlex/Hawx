@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hawx/static/css/main.7081d102.css",
-    "main.js": "/Hawx/static/js/main.6afd1e4d.js",
+    "main.css": "/Hawx/static/css/main.3251f1a7.css",
+    "main.js": "/Hawx/static/js/main.f83c6cd6.js",
     "static/js/787.8f116df5.chunk.js": "/Hawx/static/js/787.8f116df5.chunk.js",
     "static/media/ciwinz.svg": "/Hawx/static/media/ciwinz.f3d75026a5d7fe31d517cde7df3cafa2.svg",
     "static/media/gamblecity.svg": "/Hawx/static/media/gamblecity.ab250752b79ee7b85be485560153da15.svg",
@@ -61,12 +61,12 @@
     "static/media/menu.svg": "/Hawx/static/media/menu.9dd21330e169bfa3c90f125d24ff572e.svg",
     "static/media/close.svg": "/Hawx/static/media/close.a7a9167bc2eeaeacd968485b35486261.svg",
     "static/media/Flag_Ru.svg": "/Hawx/static/media/Flag_Ru.7a344b3ceb91a2edf4cebf369837d40a.svg",
-    "main.7081d102.css.map": "/Hawx/static/css/main.7081d102.css.map",
-    "main.6afd1e4d.js.map": "/Hawx/static/js/main.6afd1e4d.js.map",
+    "main.3251f1a7.css.map": "/Hawx/static/css/main.3251f1a7.css.map",
+    "main.f83c6cd6.js.map": "/Hawx/static/js/main.f83c6cd6.js.map",
     "787.8f116df5.chunk.js.map": "/Hawx/static/js/787.8f116df5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7081d102.css",
-    "static/js/main.6afd1e4d.js"
+    "static/css/main.3251f1a7.css",
+    "static/js/main.f83c6cd6.js"
   ]
 }
