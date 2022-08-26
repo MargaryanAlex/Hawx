@@ -5,8 +5,9 @@ interface IProps {
   img: string;
   title: string;
   content: string;
+  link?: string | null;
 }
-const NewsCard = ({ img, title, content }: IProps) => {
+const NewsCard = ({ img, title, content, link }: IProps) => {
   const { t } = useTranslation();
   return (
     <div className="P-newsCard">
@@ -14,9 +15,16 @@ const NewsCard = ({ img, title, content }: IProps) => {
       <div className="P-content">
         <h5>{title}</h5>
         <p>{content}</p>
-        <NavLink to="">
-          <span>{t("READ_MORE-text")}</span>
-        </NavLink>
+
+        {link ? (
+          <span
+            onClick={() => {
+              (window.open(link, "_blank") as Window).focus();
+            }}
+          >
+            {t("READ_MORE-text")}
+          </span>
+        ) : null}
       </div>
     </div>
   );

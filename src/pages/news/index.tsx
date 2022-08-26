@@ -47,6 +47,7 @@ const News = () => {
                     img={item.img}
                     title={t(`news.news${index}.newsTitle`)}
                     content={t(`news.news${index}.newsContent`)}
+                    link={item.link}
                   />
                 </div>
               );

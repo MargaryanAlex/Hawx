@@ -46,7 +46,7 @@
 
     .P-card {
       width: calc(25%);
-      text-align: center;
+      text-align: left;
       padding: 10px;
       @include screen-max-width-991 {
         width: 33.3333%;
