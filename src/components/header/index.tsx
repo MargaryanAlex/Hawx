@@ -99,7 +99,7 @@ const Header = () => {
               );
             })}
           </div>
-          <div className="P-language-bar">
+          {/* <div className="P-language-bar">
             <div
               className="P-selector"
               onMouseOver={() => {
@@ -133,7 +133,7 @@ const Header = () => {
                 })}
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/*___________________________________________________________________________________________________________________________________ */}
@@ -237,7 +237,7 @@ const Header = () => {
                   );
                 })}
               </div>
-              <div className="P-language-bar">
+              {/* <div className="P-language-bar">
                 <div
                   className="P-selector"
                   onMouseOver={() => {
@@ -272,7 +272,7 @@ const Header = () => {
                     })}
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
