@@ -54,9 +54,11 @@ const MentionSection = () => {
               <div className="P-slide" key={item.name + index}>
                 <div className="P-card">
                   <img src={item.img} alt="pic" />
-                  <p className="P-content">
-                    {t(`mentions.mention${index}.content`)}
-                  </p>
+                  <div className="P-content">
+                    {Object.values(item.content).map((elem, ind) => (
+                      <p>{t(`mentions.mention${index}.content.text${ind}`)}</p>
+                    ))}
+                  </div>
                   <div>
                     <div className="P-name">
                       {t(`mentions.mention${index}.name`)}
@@ -78,14 +80,18 @@ const MentionSection = () => {
               <div className="P-slide" key={item.name + index}>
                 <div className="P-card">
                   <img src={item.img} alt="pic" />
-                  <p className="P-content">
-                    {t(`mentions.mention${index}.content`)}
-                  </p>
-                  <div className="P-name">
-                    {t(`mentions.mention${index}.name`)}
+                  <div className="P-content">
+                    {Object.values(item.content).map((elem, ind) => (
+                      <p>{t(`mentions.mention${index}.content.text${ind}`)}</p>
+                    ))}
                   </div>
-                  <div className="P-role">
-                    {t(`mentions.mention${index}.role`)}
+                  <div>
+                    <div className="P-name">
+                      {t(`mentions.mention${index}.name`)}
+                    </div>
+                    <div className="P-role">
+                      {t(`mentions.mention${index}.role`)}
+                    </div>
                   </div>
                 </div>
               </div>
