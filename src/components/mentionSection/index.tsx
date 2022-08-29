@@ -57,11 +57,13 @@ const MentionSection = () => {
                   <p className="P-content">
                     {t(`mentions.mention${index}.content`)}
                   </p>
-                  <div className="P-name">
-                    {t(`mentions.mention${index}.name`)}
-                  </div>
-                  <div className="P-role">
-                    {t(`mentions.mention${index}.role`)}
+                  <div>
+                    <div className="P-name">
+                      {t(`mentions.mention${index}.name`)}
+                    </div>
+                    <div className="P-role">
+                      {t(`mentions.mention${index}.role`)}
+                    </div>
                   </div>
                 </div>
               </div>
