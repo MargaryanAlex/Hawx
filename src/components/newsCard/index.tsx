@@ -1,6 +1,5 @@
 import "./style.scss";
 import { useTranslation } from "react-i18next";
-import { NavLink } from "react-router-dom";
 interface IProps {
   img: string;
   title: string;

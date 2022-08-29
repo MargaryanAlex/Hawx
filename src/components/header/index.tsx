@@ -5,21 +5,21 @@ import logo from "src/assets/img/logo.svg";
 import logo_white from "src/assets/img/header/logo_white.png";
 import menu from "src/assets/img/header/menu.svg";
 import close from "src/assets/img/header/close.svg";
-import flagUK from "src/assets/img/header/Flag_UK.svg";
-import flagRu from "src/assets/img/header/Flag_Ru.svg";
+// import flagUK from "src/assets/img/header/Flag_UK.svg";
+// import flagRu from "src/assets/img/header/Flag_Ru.svg";
 import { navList } from "src/router";
 import { useState } from "react";
-import { ArrowDropDown, ArrowDropUp } from "@mui/icons-material";
+// import { ArrowDropDown, ArrowDropUp } from "@mui/icons-material";
 
 interface IOnHover {
   Solutions: boolean;
   selector: boolean;
   burgerMenu: boolean;
 }
-interface ISelected {
-  title: string;
-  icon: string;
-}
+// interface ISelected {
+//   title: string;
+//   icon: string;
+// }
 
 const Header = () => {
   const { t } = useTranslation();
@@ -28,14 +28,14 @@ const Header = () => {
     selector: false,
     burgerMenu: false,
   });
-  const [selected, setSelected] = useState<ISelected>({
-    title: "EN",
-    icon: flagUK,
-  });
-  const options: ISelected[] = [
-    { title: "EN", icon: flagUK },
-    { title: "RU", icon: flagRu },
-  ];
+  // const [selected, setSelected] = useState<ISelected>({
+  //   title: "EN",
+  //   icon: flagUK,
+  // });
+  // const options: ISelected[] = [
+  //   { title: "EN", icon: flagUK },
+  //   { title: "RU", icon: flagRu },
+  // ];
   type ObjectKey = keyof typeof onHover;
 
   return (
