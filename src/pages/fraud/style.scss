@@ -1,9 +1,13 @@
 .P-fraud {
   .P-fraud-header {
     background: #e95642;
+    min-height: 667px !important;
 
     * {
       color: #ffffff;
+    }
+    h4 {
+      margin: 0 !important;
     }
     .P-fraud-border {
       border: 2px solid #ae8b25;
