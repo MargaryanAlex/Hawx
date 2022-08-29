@@ -43,7 +43,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="P-footer-nav G-web">
+      <div className="P-footer-nav P-web">
         <div className="G-container">
           <div className="P-footer-logo">
             <img src={logo} alt="logo" className="logo" />
@@ -109,7 +109,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="P-footer-nav G-mobile">
+      <div className="P-footer-nav P-mobile">
         <div className="G-container">
           <img src={logo} alt="logo" className="logo" />
 
