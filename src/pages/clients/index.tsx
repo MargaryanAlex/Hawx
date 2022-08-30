@@ -36,8 +36,8 @@ const logos = [
 const Clients = () => {
   const { t } = useTranslation();
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-  }, [])
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="P-clients">
       <div className="G-container P-clients-top ">
@@ -61,6 +61,7 @@ const Clients = () => {
               </div>
             );
           })}
+          <span>{t("And_More-text")}</span>
         </div>
       </div>
       <div className="P-clients-map">

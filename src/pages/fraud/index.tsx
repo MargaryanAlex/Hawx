@@ -2,6 +2,8 @@ import "./style.scss";
 import jsonFile from "src/i18n/locales/en/translations.json";
 import { useTranslation } from "react-i18next";
 import logo from "src/assets/img/solutions/fraud.png";
+import img1 from "src/assets/img/solutions/fraud/Group1.png";
+
 import { useEffect } from "react";
 // import { useState } from "react";
 const Fraud = () => {
@@ -47,17 +49,10 @@ const Fraud = () => {
       <div className="G-container">
         <div className="G-solution-body">
           <div className="G-img-container">
-            <img
-              src={
-                jsonFile.solutions.fraud[
-                  `tab${0}` as keyof typeof jsonFile.solutions.fraud
-                ].icon
-              }
-              alt=""
-            />
+            <img src={img1} alt="" />
           </div>
           <div className=" G-solution-body-text">
-            <ul>
+            <ul style={{ marginLeft: "5px" }}>
               {Object.values(
                 jsonFile.solutions.fraud[
                   `tab${0}` as keyof typeof jsonFile.solutions.fraud

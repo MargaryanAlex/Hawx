@@ -3,6 +3,14 @@ import jsonFile from "src/i18n/locales/en/translations.json";
 import { useTranslation } from "react-i18next";
 import logo from "src/assets/img/solutions/website.png";
 import { useEffect, useState } from "react";
+import img1 from "src/assets/img/solutions/website/Group1.png";
+import img2 from "src/assets/img/solutions/website/Group2.png";
+import img3 from "src/assets/img/solutions/website/Group3.png";
+import img4 from "src/assets/img/solutions/website/Group4.png";
+import img5 from "src/assets/img/solutions/website/Group5.png";
+import img6 from "src/assets/img/solutions/website/Group6.png";
+import img7 from "src/assets/img/solutions/website/Group7.png";
+const imgs = [img1, img2, img3, img4, img5, img6, img7];
 const Website = () => {
   const [currentTab, setCurrentTab] = useState("Daily Operations");
   const [currentIndex, setCurrenntIndex] = useState(0);
@@ -47,14 +55,7 @@ const Website = () => {
       <div className="G-container">
         <div className="G-solution-body">
           <div className="G-img-container">
-            <img
-              src={
-                jsonFile.solutions.website[
-                  `tab${currentIndex}` as keyof typeof jsonFile.solutions.website
-                ].icon
-              }
-              alt=""
-            />
+            <img src={imgs[currentIndex]} alt="" />
           </div>
           <div className=" G-solution-body-text">
             <h2>{t(`solutions.website.tab${currentIndex}.title`)}</h2>

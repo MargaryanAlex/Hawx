@@ -3,13 +3,17 @@ import jsonFile from "src/i18n/locales/en/translations.json";
 import { useTranslation } from "react-i18next";
 import logo from "src/assets/img/solutions/financial.png";
 import { useEffect, useState } from "react";
+import img1 from "src/assets/img/solutions/financical/Group1.png";
+import img2 from "src/assets/img/solutions/financical/Group2.png";
+import img3 from "src/assets/img/solutions/financical/Group3.png";
+const imgs = [img1, img2, img3];
 const Financial = () => {
   const [currentTab, setCurrentTab] = useState("Financial Reporting");
   const [currentIndex, setCurrenntIndex] = useState(0);
   const { t } = useTranslation();
-  useEffect (() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-  }, [])
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="G-solution P-financial">
       <div className="G-solution-header P-financial-header ">
@@ -46,14 +50,7 @@ const Financial = () => {
       <div className="G-container">
         <div className="G-solution-body">
           <div className="G-img-container">
-            <img
-              src={
-                jsonFile.solutions.financial[
-                  `tab${currentIndex}` as keyof typeof jsonFile.solutions.financial
-                ].icon
-              }
-              alt=""
-            />
+            <img src={imgs[currentIndex]} alt="logo" />
           </div>
           <div className=" G-solution-body-text">
             <h2>{t(`solutions.financial.tab${currentIndex}.title`)}</h2>

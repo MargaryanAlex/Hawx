@@ -3,13 +3,18 @@ import jsonFile from "src/i18n/locales/en/translations.json";
 import { useTranslation } from "react-i18next";
 import logo from "src/assets/img/solutions/design.png";
 import { useEffect, useState } from "react";
+import img1 from "src/assets/img/solutions/design/Group1.png";
+import img2 from "src/assets/img/solutions/design/Group2.png";
+import img3 from "src/assets/img/solutions/design/Group3.png";
+const imgs = [img1, img2, img3];
+
 const Design = () => {
   const [currentTab, setCurrentTab] = useState("Website Design");
   const [currentIndex, setCurrenntIndex] = useState(0);
   const { t } = useTranslation();
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-  }, [])
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="G-solution P-design">
       <div className="G-solution-header P-design-header ">
@@ -46,14 +51,7 @@ const Design = () => {
       <div className="G-container">
         <div className="G-solution-body">
           <div className="G-img-container">
-            <img
-              src={
-                jsonFile.solutions.design[
-                  `tab${currentIndex}` as keyof typeof jsonFile.solutions.design
-                ].icon
-              }
-              alt=""
-            />
+            <img src={imgs[currentIndex]} alt="" />
           </div>
           <div className=" G-solution-body-text">
             <h2>{t(`solutions.design.tab${currentIndex}.title`)}</h2>

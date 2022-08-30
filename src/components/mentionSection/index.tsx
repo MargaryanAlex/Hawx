@@ -56,7 +56,9 @@ const MentionSection = () => {
                   <img src={item.img} alt="pic" />
                   <div className="P-content">
                     {Object.values(item.content).map((elem, ind) => (
-                      <p>{t(`mentions.mention${index}.content.text${ind}`)}</p>
+                      <p key={elem + ind}>
+                        {t(`mentions.mention${index}.content.text${ind}`)}
+                      </p>
                     ))}
                   </div>
                   <div>
@@ -82,7 +84,9 @@ const MentionSection = () => {
                   <img src={item.img} alt="pic" />
                   <div className="P-content">
                     {Object.values(item.content).map((elem, ind) => (
-                      <p>{t(`mentions.mention${index}.content.text${ind}`)}</p>
+                      <p key={elem + ind}>
+                        {t(`mentions.mention${index}.content.text${ind}`)}
+                      </p>
                     ))}
                   </div>
                   <div>

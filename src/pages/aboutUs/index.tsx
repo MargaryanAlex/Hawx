@@ -116,7 +116,7 @@ const AboutUs = () => {
           <p>{t("Managing_an_online-text")}</p>
           <div className="P-numbers G-flex">
             <div>
-              <p>25+</p>
+              <p>27+</p>
               <span>{t("Markets-text")}</span>
             </div>
             <div>

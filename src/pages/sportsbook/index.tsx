@@ -3,14 +3,16 @@ import jsonFile from "src/i18n/locales/en/translations.json";
 import { useTranslation } from "react-i18next";
 import logo from "src/assets/img/solutions/sportsbook.png";
 import { useEffect } from "react";
+import img1 from "src/assets/img/solutions/sportsbook/Group1.png";
+
 // import { useState } from "react";
 const Sportsbook = () => {
   // const [currentTab, setCurrentTab] = useState("Daily Operations");
   // const [0, setCurrenntIndex] = useState(0);
   const { t } = useTranslation();
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-  }, [])
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="G-solution P-sportsbook">
       <div className="G-solution-header P-sportsbook-header ">
@@ -48,17 +50,10 @@ const Sportsbook = () => {
       <div className="G-container">
         <div className="G-solution-body">
           <div className="G-img-container">
-            <img
-              src={
-                jsonFile.solutions.sportsbook[
-                  `tab${0}` as keyof typeof jsonFile.solutions.sportsbook
-                ].icon
-              }
-              alt=""
-            />
+            <img src={img1} alt="" />
           </div>
-          <div className=" G-solution-body-text">
-            <ul>
+          <div className=" G-solution-body-text ">
+            <ul style={{ marginLeft: "5px" }}>
               {Object.values(
                 jsonFile.solutions.sportsbook[
                   `tab${0}` as keyof typeof jsonFile.solutions.sportsbook

@@ -1,5 +1,6 @@
 {
   "Solutions-text": "Solutions",
+  "And_More-text": "And More",
   "Clients-text": "Clients",
   "Company-text": "Company",
   "News-text": "News",
@@ -40,7 +41,7 @@
   "Markets-text": "Markets",
   "Employees-text": "Employees",
   "Offices-text": "Offices",
-  "HawX_Standout-text": "What makes HawX Standout?",
+  "HawX_Standout-text": "What makes HawX Standout",
   "Brand_Way-text": "Enabling You to Brand Your Way",
   "Perfect_Strategy-text": "Perfect Strategy",
   "Based_on_research-text": "Based on research and analysis, we introduce revolutionary solutions. Managing an online business is challenging, so many business owners leave the work to the companies like HawX.",
@@ -75,7 +76,7 @@
   "Companies_That-text": "Companies That Are Using Solutions from HawX ",
   "While_being_on_the_market-text": "While being on the market, we have partners from all around the world that fully trust HawX professionals and lead their business to our hands. On the other hand, we have increased their GGR and NGR by several hundreds of percentages.",
   "Countries_Around-text": "Countries Around the World With HawX iGaming Solutions",
-  "While_being-text": "While being on the market, we have partners from all around the world that fully trust HawX professionals and lead their business to our hands.On the other hand, we have increased their GGR and NGR by several hundreds of percentages.",
+  "While_being-text": "While being on the market, we have partners from all around the world that fully trust HawX professionals and lead their business to our hands. On the other hand, we have increased their GGR and NGR by several hundreds of percentages.",
   "Who_We_Are-text": "Who We Are",
   "Our_vision-text": "Our vision is to be the industry-leading online service provider that brings outstanding solutions to our business partners. ",
   "Our_mission-text": "Our mission is to make your business look more solid and increase profitability by delivering the best quality of service with innovative solutions.",
@@ -129,14 +130,14 @@
     "news2": {
       "link": "",
       "newsTitle": "",
-      "newsContent": "HawX is attending at iGB Live ( Amsterdam)",
+      "newsContent": "HawX is attending at iGB Live (Amsterdam)",
       "img": "https://i.postimg.cc/9Q73wrvv/0.png"
     },
     "news3": {
       "link": "",
 
       "newsTitle": "",
-      "newsContent": "HawX is attending at G2G Asia (Singapore )",
+      "newsContent": "HawX is attending at G2G Asia (Singapore)",
       "img": "https://i.postimg.cc/6Q8hpvgv/9.png"
     }
   },
@@ -158,7 +159,7 @@
         "text1": "These are the Key feautures that makes HawX our reliable and stable partner."
       },
       "name": "Mr Azad",
-      "role": "CEO"
+      "role": "CMO"
     },
     "mention2": {
       "img": "https://i.postimg.cc/gjcw9zfx/medina.png",
@@ -184,8 +185,8 @@
         "text0": "This was great value for us to get the package of services HawX offered.",
         "text1": "I believe that the power of HawX is the communication strategies they have for every user and the quality of delivering it in the most attractive and user-oriented way."
       },
-      "name": "Mr Sorsis, CEO",
-      "role": "CMO"
+      "name": "Mr Sorsis",
+      "role": "CEO"
     }
   },
 

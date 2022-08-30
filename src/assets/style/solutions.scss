@@ -2,19 +2,23 @@
 .G-solution {
   padding-bottom: 160px;
   .G-solution-header {
-    min-height: 783px;
+    min-height: 703px;
     width: 100%;
     @include screen-max-width-991 {
       padding-bottom: 32px;
     }
     .G-container {
       display: flex;
-      min-height: 583px;
+      height: 523px;
+      padding: 91px 15px 20px;
       align-items: center;
       justify-content: space-between;
-      
+
       @include screen-max-width-991 {
         display: block;
+        min-height: 523px;
+        height: auto;
+
         img {
           display: block;
           width: auto;
