@@ -62,6 +62,50 @@
   }
   .P-clients-map {
     width: 100%;
+    .P-countries {
+      gap: 10px;
+      align-items: center;
+      margin-right: -1px;
+      padding: 16px;
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #23232f;
+      }
+      @include screen-max-width-991 {
+        width: 80%;
+        margin: 0 auto;
+        gap: 0;
+        p {
+          width: 33%;
+          text-align: left;
+        }
+      }
+      @include screen-max-width-607 {
+        justify-content: center;
+
+        p {
+          width: 35%;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          /* identical to box height */
+
+          text-align: left;
+
+          color: #23232f;
+        }
+      }
+
+      .P-horizontal-divider {
+        height: 20px;
+        border-left: 1px solid #000000;
+        @include screen-max-width-991 {
+          display: none;
+        }
+      }
+    }
     h3 {
       font-weight: 600;
       font-size: 24px;
@@ -78,9 +122,8 @@
     .P-clients-map-container {
       width: 100%;
       background: #f5f5f7;
-      @include screen-max-width-991 {
-        margin-bottom: 28px;
-      }
+      overflow: hidden;
+
       img {
         display: block;
         margin: 11px auto 0;

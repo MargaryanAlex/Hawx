@@ -32,7 +32,30 @@ const logos = [
   megabet,
   transwayz,
 ];
-
+const countries = [
+  "India",
+  "Thailand",
+  "Malaysia",
+  "Singapore",
+  "South Korea",
+  "Philippines",
+  "Kazakhstan",
+  "Uzbekstan",
+  "Iran",
+  "Armenia",
+  "Brazil",
+  "Canada",
+  "Norway",
+  "UK",
+  "Portugal",
+  "Morocco",
+  "Nigeria",
+  "Netherlands",
+  "Iraq",
+  "Finland",
+  "Belarus",
+  "Ukraine",
+];
 const Clients = () => {
   const { t } = useTranslation();
   useEffect(() => {
@@ -68,6 +91,23 @@ const Clients = () => {
         <h3>{t("Countries_Around-text")}</h3>
         <div className="P-clients-map-container">
           <img src={map} alt="map" />
+        </div>
+        <div
+          className="G-container"
+          style={{
+            overflow: "hidden",
+          }}
+        >
+          <div className="G-flex-wrap P-countries G-justify-between">
+            {countries.map((item, index) => (
+              <>
+                <p>{item}</p>
+                {index !== countries.length - 1 ? (
+                  <div className="P-horizontal-divider" />
+                ) : null}
+              </>
+            ))}
+          </div>
         </div>
       </div>
     </div>
