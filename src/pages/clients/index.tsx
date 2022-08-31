@@ -15,7 +15,7 @@ import megabet from "src/assets/img/clientsLogo/megabet.svg";
 import transwayz from "src/assets/img/clientsLogo/transwayz.svg";
 import map from "src/assets/img/clientsLogo/map.svg";
 import "./style.scss";
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 
 const logos = [
   sorsx,
@@ -100,12 +100,12 @@ const Clients = () => {
         >
           <div className="G-flex-wrap P-countries G-justify-between">
             {countries.map((item, index) => (
-              <>
-                <p>{item}</p>
+              <Fragment key={index + item}>
+                <p key={item + index}>{item}</p>
                 {index !== countries.length - 1 ? (
-                  <div className="P-horizontal-divider" />
+                  <div className="P-horizontal-divider" key={index} />
                 ) : null}
-              </>
+              </Fragment>
             ))}
           </div>
         </div>
