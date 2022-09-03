@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
-import ClintsSection from "src/components/clientsSection";
+// import ClintsSection from "src/components/clientsSection";
 import NewsSection from "src/components/newsSection";
 import { solutionsList } from "src/router";
 import "./style.scss";
@@ -65,7 +65,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <ClintsSection />
+      {/* <ClintsSection /> */}
       <div className="P-section G-align-center G-flex-column">
         <h4>{t("HawX_Standout-text")}</h4>
         <div className="P-blue-area">
