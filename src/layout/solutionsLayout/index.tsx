@@ -9,7 +9,7 @@ const SolutionsLayout: FC<{ children: ReactElement }> = ({ children }) => {
     <div>
       <Header />
       {children}
-      <ClintsSection />
+      {/* <ClintsSection /> */}
       <NewsSection />
       <Footer />
     </div>
