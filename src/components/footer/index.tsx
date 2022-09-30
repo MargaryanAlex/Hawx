@@ -176,7 +176,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <span>© 2022 Turn Up. All Rights Reserved</span>
+          <span>© {new Date().getFullYear()} Turn Up. All Rights Reserved</span>
         </div>
       </div>
     </footer>
