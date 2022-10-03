@@ -1,4 +1,4 @@
-import  { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 // import ClintsSection from "src/components/clientsSection";
@@ -74,7 +74,7 @@ const Home = () => {
               <p>{t("MANAGING-text")}</p>
               <div className="P-counts G-justify-between">
                 <div>
-                  <h5>25+</h5>
+                  <h5>30+</h5>
                   <p>{t("Markets-text")}</p>
                 </div>
                 <div>
@@ -86,7 +86,7 @@ const Home = () => {
                   <p>{t("Offices-text")}</p>
                 </div>
                 <div>
-                  <h5>30+</h5>
+                  <h5>25+</h5>
                   <p>{t("Clients-text")}</p>
                 </div>
               </div>
