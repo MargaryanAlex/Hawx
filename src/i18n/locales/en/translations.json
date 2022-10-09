@@ -122,26 +122,31 @@
       "img": "https://i.postimg.cc/SK2nRdsh/f.png"
     },
     "news1": {
+      "link": "",
+      "newsTitle": "",
+      "newsContent": "HawX will be attending on SBC Summit Barcelona to take your iGaming CRM to the next level",
+      "img": "https://i.postimg.cc/K4XvKChG/Barcelona-summit.png"
+    },
+    "news2": {
       "link": "https://gbc-time.com/everything-you-ever-wanted-to-know-about-hawx-igaming-tech-startup",
       "newsTitle": "Sep 14, 2022  | Press Release",
       "newsContent": "Everything You Ever Wanted to Know about HawX – iGaming Tech Startup ...",
       "img": "https://i.postimg.cc/hj9Q6Ctg/GBC-INTERVIEW-GIORGI.png"
     },
-    "news2": {
+    "news3": {
       "link": "https://sigma.world/news/hawx/",
       "newsTitle": "Nov 08, 2020  | Press Release",
       "newsContent": "Taking your iGaming business to the HawX level SiGMA News is the up ...",
       "img": "https://i.postimg.cc/KYtKhy5M/igb-web1.png"
     },
-    "news3": {
+    "news4": {
       "link": "",
       "newsTitle": "",
       "newsContent": "HawX is attending at iGB Live (Amsterdam)",
       "img": "https://i.postimg.cc/9Q73wrvv/0.png"
     },
-    "news4": {
+    "news5": {
       "link": "",
-
       "newsTitle": "",
       "newsContent": "HawX is attending at G2G Asia (Singapore)",
       "img": "https://i.postimg.cc/6Q8hpvgv/9.png"
