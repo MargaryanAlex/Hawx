@@ -46,9 +46,14 @@
     color: #23232f;
     margin-bottom: 32px;
   }
+  .slick-dots li button {
+    min-width: auto;
+    min-height: auto;
+  }
   button {
-    width: 252px;
-    height: 40px;
+    min-width: 252px;
+    min-height: 40px;
+    padding: 10px;
     background: #0148ff;
     border-radius: 4px;
     color: #ffffff;

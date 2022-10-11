@@ -16,6 +16,7 @@
   "DONT_HESITATE-text": "Don't hesitate to drop us a message and we'll get back to you right away",
   "PHONE-text": "Phone",
   "EMAIL-text": "Email",
+  "copyright": "Turn Up. All Rights Reserved",
   "FOLLOW-text": "Follow Us",
   "ABOUT-text": "About Us",
   "PRIVACY-text": "Privacy Policy",
@@ -605,55 +606,27 @@
         "text": {
           "text0": {
             "title": "",
-            "content": "Along with sustained business growth, the bookmaker’s ability to effectively manage risk is the most important factor in determining an operator’s profitability and long-term success. "
+            "content": "Minimizing bonus cost by more than 20% via detecting bonus hunters. "
           },
           "text1": {
             "title": "",
-            "content": "Efficient risk management is dependent upon the points and responsibilities that HawX provides for you: "
+            "content": "Investigate and classify fraudulent users to avoid high-risk scenarios. "
           },
           "text2": {
             "title": "",
-            "content": "Developing processes for odds compilation, risk management, in-play trading and settlement."
+            "content": "IP management per promotion and bonus awarding."
           },
           "text3": {
             "title": "",
-            "content": "Controlling and monitoring all game styles, including Arbitrage, SFM, Strong Opinion, Late Betting, etc."
+            "content": "Avoiding double awarding in promotions."
           },
           "text4": {
             "title": "",
-            "content": "Analyze, define and present the opportunities for state-of-the-art risk management solutions."
+            "content": "Maintain a good and efficient relationship with platform providers and report them in case of any big win."
           },
           "text5": {
             "title": "",
-            "content": "Provide management road-map project planning."
-          },
-          "text6": {
-            "title": "",
-            "content": "Guide the implementation of risk-related key projects."
-          },
-          "text7": {
-            "title": "",
-            "content": "Ensure all event and player limits are analyzed and maintained, therefore ensuring a good user experience for the customer without exposing the Partner to unnecessary risk. "
-          },
-          "text8": {
-            "title": "",
-            "content": "Enhance risk management processes."
-          },
-          "text9": {
-            "title": "",
-            "content": "Pro-actively profiling customers based on wagering behaviours. "
-          },
-          "text10": {
-            "title": "",
-            "content": "Achieve all risk related KPIs."
-          },
-          "text11": {
-            "title": "",
-            "content": "Deliver periodic reports with a clear action plan for improvement, such as betting patterns, limits, etc."
-          },
-          "text12": {
-            "title": "",
-            "content": "Multi-Device and Account sharing tracking and linking"
+            "content": "Developing and maintaining the Group Risk Assessment, analysing risks as well as identifying, describing and estimating the risks affecting the business. "
           }
         }
       }

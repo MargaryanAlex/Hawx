@@ -5,8 +5,40 @@
 @import "mixin";
 @import "solutions";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$FiraGO-Bold: "FiraGO-Bold";
+$FiraGO-Book: "FiraGO-Book";
+$FiraGO-Eight: "FiraGO-Eight";
+$FiraGO-ExtraBold: "FiraGO-ExtraBold";
+$FiraGO-ExtraLight: "FiraGO-ExtraLight";
+$FiraGO-Four: "FiraGO-Four";
+$FiraGO-Hair: "FiraGO-Hair";
+$FiraGO-Heavy: "FiraGO-Heavy";
+$FiraGO-Light: "FiraGO-Light";
+$FiraGO-Medium: "FiraGO-Medium";
+$FiraGO-Regular: "FiraGO-Regular";
+$FiraGO-SemiBold: "FiraGO-SemiBold";
+$FiraGO-Thin: "FiraGO-Thin";
+$FiraGO-Two: "FiraGO-Two";
+$FiraGO-UltraLight: "FiraGO-UltraLight";
+
+$font-path-FiraGO: "../../assets/fonts/firago/";
+$list-FiraGO: [$FiraGO-Bold, $FiraGO-Book, $FiraGO-Eight, $FiraGO-ExtraBold,
+  $FiraGO-ExtraLight, $FiraGO-Four, $FiraGO-Hair, $FiraGO-Heavy, $FiraGO-Light,
+  $FiraGO-Medium, $FiraGO-Regular, $FiraGO-SemiBold, $FiraGO-Thin, $FiraGO-Two,
+  $FiraGO-UltraLight, $FiraGO-Regular];
+
+@each $name in $list-FiraGO {
+  $src: $font-path-FiraGO + $name;
+
+  @font-face {
+    src: url($src + ".otf") format("truetype");
+    font-family: $name;
+  }
+}
+
 * {
-  font-family: "Poppins";
+  font-family: "FiraGO-Regular";
 }
 
 .material-icons {

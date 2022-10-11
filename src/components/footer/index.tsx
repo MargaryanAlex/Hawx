@@ -73,7 +73,10 @@ const Footer = () => {
                 />
               </div>
             </div>
-            <span>© 2022 Turn Up. All Rights Reserved</span>
+            <span>
+              {" "}
+              © {new Date().getFullYear()} {t("copyright")}{" "}
+            </span>
           </div>
           <div className="P-footer-navigation">
             <div className="P-sections">
@@ -176,7 +179,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <span>© {new Date().getFullYear()} Turn Up. All Rights Reserved</span>
+          <span>
+            © {new Date().getFullYear()} {t("copyright")}{" "}
+          </span>
         </div>
       </div>
     </footer>

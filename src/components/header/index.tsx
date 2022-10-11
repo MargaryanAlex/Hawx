@@ -5,39 +5,56 @@ import logo from "src/assets/img/logo.svg";
 import logo_white from "src/assets/img/header/logo_white.png";
 import menu from "src/assets/img/header/menu.svg";
 import close from "src/assets/img/header/close.svg";
-// import flagUK from "src/assets/img/header/Flag_UK.svg";
-// import flagRu from "src/assets/img/header/Flag_Ru.svg";
+import flagUK from "src/assets/img/header/Flag_UK.svg";
+import flagRu from "src/assets/img/header/Flag_Ru.svg";
 import { navList } from "src/router";
-import { useState } from "react";
-// import { ArrowDropDown, ArrowDropUp } from "@mui/icons-material";
+import { useEffect, useState } from "react";
+import { ArrowDropDown, ArrowDropUp } from "@mui/icons-material";
 
 interface IOnHover {
   Solutions: boolean;
   selector: boolean;
   burgerMenu: boolean;
 }
-// interface ISelected {
-//   title: string;
-//   icon: string;
-// }
+interface ISelected {
+  title: string;
+  icon: string;
+  id: string;
+}
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [onHover, setOnHover] = useState<IOnHover>({
     Solutions: false,
     selector: false,
     burgerMenu: false,
   });
-  // const [selected, setSelected] = useState<ISelected>({
-  //   title: "EN",
-  //   icon: flagUK,
-  // });
-  // const options: ISelected[] = [
-  //   { title: "EN", icon: flagUK },
-  //   { title: "RU", icon: flagRu },
-  // ];
-  type ObjectKey = keyof typeof onHover;
+  const options: ISelected[] = [
+    { title: "EN", icon: flagUK, id: "en" },
+    { title: "RU", icon: flagRu, id: "ru" },
+  ];
+  const [selected, setSelected] = useState<ISelected>(
+    localStorage.getItem("language")
+      ? options.filter(
+          (item) => item.id === localStorage.getItem("language")
+        )[0]
+      : {
+          title: "EN",
+          icon: flagUK,
+          id: "en",
+        }
+  );
 
+  type ObjectKey = keyof typeof onHover;
+  const languageChanger = (item: ISelected) => {
+    setSelected(item);
+    localStorage.setItem("language", item.id);
+  };
+
+  useEffect(() => {
+    i18n.changeLanguage(selected.id);
+     // eslint-disable-next-line
+  }, [selected]);
   return (
     <header className="P-header">
       <div className="G-container G-justify-between G-align-center">
@@ -99,7 +116,7 @@ const Header = () => {
               );
             })}
           </div>
-          {/* <div className="P-language-bar">
+          <div className="P-language-bar">
             <div
               className="P-selector"
               onMouseOver={() => {
@@ -110,7 +127,7 @@ const Header = () => {
               }}
             >
               <p className="G-justify-between G-align-center">
-                {selected.title} <img src={selected.icon} alt="flag" />{" "}
+                {t(selected.title)} <img src={selected.icon} alt="flag" />{" "}
                 {onHover.selector ? <ArrowDropUp /> : <ArrowDropDown />}
               </p>
               <ul className={onHover.selector ? "active" : ""}>
@@ -119,12 +136,10 @@ const Header = () => {
                     return (
                       <li
                         key={item.title + index}
-                        onClick={() => {
-                          setSelected(item);
-                        }}
+                        onClick={() => languageChanger(item)}
                       >
                         {" "}
-                        {item.title} <img src={item.icon} alt="flag" />
+                        {t(item.title)} <img src={item.icon} alt="flag" />
                       </li>
                     );
                   } else {
@@ -133,7 +148,7 @@ const Header = () => {
                 })}
               </ul>
             </div>
-          </div> */}
+          </div>
         </div>
 
         {/*___________________________________________________________________________________________________________________________________ */}
@@ -237,7 +252,7 @@ const Header = () => {
                   );
                 })}
               </div>
-              {/* <div className="P-language-bar">
+              <div className="P-language-bar">
                 <div
                   className="P-selector"
                   onMouseOver={() => {
@@ -248,7 +263,7 @@ const Header = () => {
                   }}
                 >
                   <p className="G-justify-between G-align-center">
-                    {selected.title} <img src={selected.icon} alt="flag" />{" "}
+                    {t(selected.title)} <img src={selected.icon} alt="flag" />{" "}
                     {onHover.selector ? <ArrowDropUp /> : <ArrowDropDown />}
                   </p>
                   <ul className={onHover.selector ? "active" : ""}>
@@ -257,13 +272,10 @@ const Header = () => {
                         return (
                           <li
                             key={item.title + index}
-                            onClick={() => {
-                              setSelected(item);
-                              setOnHover({ ...onHover, burgerMenu: false });
-                            }}
+                            onClick={() => languageChanger(item)}
                           >
                             {" "}
-                            {item.title} <img src={item.icon} alt="flag" />
+                            {t(item.title)} <img src={item.icon} alt="flag" />
                           </li>
                         );
                       } else {
@@ -272,7 +284,7 @@ const Header = () => {
                     })}
                   </ul>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
