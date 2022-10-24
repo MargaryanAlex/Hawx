@@ -49,6 +49,7 @@ const Header = () => {
   const languageChanger = (item: ISelected) => {
     setSelected(item);
     localStorage.setItem("language", item.id);
+    document.documentElement.setAttribute("lang", selected.id);
   };
 
   useEffect(() => {
