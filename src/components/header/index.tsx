@@ -53,7 +53,9 @@ const Header = () => {
 
   useEffect(() => {
     i18n.changeLanguage(selected.id);
-     // eslint-disable-next-line
+    document.documentElement.setAttribute("lang", selected.id);
+
+    // eslint-disable-next-line
   }, [selected]);
   return (
     <header className="P-header">

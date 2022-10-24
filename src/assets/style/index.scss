@@ -37,10 +37,12 @@ $list-FiraGO: [$FiraGO-Bold, $FiraGO-Book, $FiraGO-Eight, $FiraGO-ExtraBold,
   }
 }
 
-* {
+html[lang=ru] * {
   font-family: "FiraGO-Regular";
 }
-
+* {
+  font-family: 'Poppins', sans-serif;
+}
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
