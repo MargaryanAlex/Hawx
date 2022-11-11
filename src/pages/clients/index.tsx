@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 // import lcukybet from "src/assets/img/clientsLogo/lcukybet.svg";
 // import megabet from "src/assets/img/clientsLogo/megabet.svg";
 // import transwayz from "src/assets/img/clientsLogo/transwayz.svg";
-import map from "src/assets/img/clientsLogo/map.svg";
+import map from "src/assets/img/clientsLogo/map.png";
 import "./style.scss";
 import { Fragment, useEffect } from "react";
 
@@ -90,7 +90,10 @@ const Clients = () => {
       <div className="P-clients-map">
         <h3>{t("Countries_Around-text")}</h3>
         <div className="P-clients-map-container">
-          <img src={map} alt="map" />
+          <div className="G-container">
+            {" "}
+            <img src={map} alt="map" />
+          </div>
         </div>
         <div
           className="G-container"

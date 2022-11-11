@@ -139,7 +139,7 @@ const AboutUs = () => {
           <p>{t("Delivering_a_personal-text")}</p>
         </div>
       </div>
-      <div className="P-photos G-container">
+      {/* <div className="P-photos G-container">
         <h2>{t("Leadership_&_Management-text")}</h2>
         <div className="P-container">
           {leadership.map((item, index) => {
@@ -154,7 +154,7 @@ const AboutUs = () => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
