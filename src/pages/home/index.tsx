@@ -67,8 +67,9 @@ const Home = () => {
             </div>
             {/* <ClintsSection /> */}
             <div className="P-section G-align-center G-flex-column">
-                {/*<h4>{t("HawX_Standout-text")}</h4>*/}
                 <div className="P-blue-area">
+                    <h4>{t("HawX_Standout-text")}</h4>
+
                     <div className="G-container">
                         <div className="P-container">
                             <p>{t("MANAGING-text")}</p>
