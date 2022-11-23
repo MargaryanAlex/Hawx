@@ -98,7 +98,7 @@ export const solutionsList: IMenu[] = [
   {
     title: "PRODUCT-text",
     path: RouteNames.PRODUCT,
-    color: "#D6D5D5",
+    color: "#D7D8E1",
     icon: product,
   },
   {

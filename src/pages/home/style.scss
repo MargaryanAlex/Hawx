@@ -3,10 +3,10 @@
 .P-homepage {
   width: 100%;
   .P-solutions {
-    padding-bottom: 64px;
+   /* padding-bottom: 64px;
     @include screen-max-width-991 {
       padding-bottom: 24px;
-    }
+    }*/
     h5 {
       font-weight: 600;
       font-size: 20px;
@@ -147,7 +147,7 @@
     }
   }
   .P-section {
-    padding-bottom: 96px;
+    padding-bottom: 80px;
     @include screen-max-width-991 {
       padding-bottom: 24px;
     }
