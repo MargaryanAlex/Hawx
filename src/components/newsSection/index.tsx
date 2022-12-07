@@ -34,7 +34,7 @@ const NewsSection = () => {
           <NavLink to={RouteNames.NEWS}>{t("SEE_ALL-text")}</NavLink>
         </button>
       </div>
-      <div className="P-slider-header">
+     {/* <div className="P-slider-header">
         <h5>{t("Trusted-text")}</h5>
         <p>{t("We_work-text")}</p>
       </div>
@@ -42,7 +42,7 @@ const NewsSection = () => {
         <div className="G-container ">
           <MentionSection />
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 };

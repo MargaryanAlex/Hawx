@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import phone from "src/assets/img/footer/Phone.png";
-import envelope from "src/assets/img/footer/Envelope.png";
+import envelope from "src/assets/img/footer/Envelope.svg";
 import fb from "src/assets/img/footer/fb.svg";
 import insta from "src/assets/img/footer/instagram.svg";
 import linkdin from "src/assets/img/footer/linkedin.svg";
@@ -19,7 +19,7 @@ const Footer = () => {
         <h3>{t("GET_START-text")}</h3>
         <p>{t("DONT_HESITATE-text")}</p>
         <div className="P-btns">
-          <button
+          {/*<button
             onClick={() => {
               window.location = "tel:+995595770073" as (string | Location) &
                 Location;
@@ -29,7 +29,7 @@ const Footer = () => {
           >
             <img src={phone} alt="phone" />
             {t("PHONE-text")}
-          </button>
+          </button>*/}
           <button
             onClick={() => {
               window.location = "mailto:info@hawx.io" as (string | Location) &

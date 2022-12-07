@@ -79,7 +79,7 @@ const Home = () => {
                                     <p>{t("Markets-text")}</p>
                                 </div>
                                 <div>
-                                    <h5>75+</h5>
+                                    <h5>85+</h5>
                                     <p>{t("Employees-text")}</p>
                                 </div>
                                 <div>
