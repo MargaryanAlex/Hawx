@@ -1,7 +1,11 @@
 import Slider from "react-slick";
 import prev from "src/assets/img/mentions/prev.png";
 import next from "src/assets/img/mentions/next.png";
+<<<<<<< HEAD
 import jsonFile from "src/i18n/locales/eng/translations.json";
+=======
+import jsonFile from "src/i18n/locales/en/translations.json";
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
 
 import "./style.scss";
 import { useTranslation } from "react-i18next";
@@ -47,7 +51,11 @@ const MentionSection = () => {
   };
   return (
     <div className="P-mentions-section">
+<<<<<<< HEAD
       {/*<div className="G-web">
+=======
+      <div className="G-web">
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         <Slider {...settings}>
           {Object.values(jsonFile.mentions).map((item, index) => {
             return (
@@ -102,7 +110,11 @@ const MentionSection = () => {
             );
           })}
         </div>
+<<<<<<< HEAD
       </div>*/}
+=======
+      </div>
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
     </div>
   );
 };

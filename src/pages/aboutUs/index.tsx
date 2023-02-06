@@ -1,5 +1,9 @@
 import "./style.scss";
+<<<<<<< HEAD
 import {useTranslation} from "react-i18next";
+=======
+import { useTranslation } from "react-i18next";
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
 import fb from "src/assets/img/aboutUs/Facebook.svg";
 import inst from "src/assets/img/aboutUs/Instagram.svg";
 import linkedin from "src/assets/img/aboutUs/Linkedin.svg";
@@ -13,6 +17,7 @@ import nadusa from "src/assets/img/aboutUs/nadusa.jpg";
 import rafael from "src/assets/img/aboutUs/rafael.jpg";
 import avo from "src/assets/img/aboutUs/avo.png";
 import vov from "src/assets/img/aboutUs/vov.png";
+<<<<<<< HEAD
 import {useContext, useEffect, useRef} from "react";
 import Animation from "../../components/animation";
 import Calculation from "../../components/animation/calculation";
@@ -161,6 +166,135 @@ const AboutUs = () => {
                 </div>
             </div>
             {/* <div className="P-photos G-container">
+=======
+import { useEffect } from "react";
+const leadership = [
+  {
+    img: gt,
+    name: "Giorgi_Tsutskiridze-text",
+    role: "Co-Founder_&_Chief_Executive_Officer-text",
+  },
+  {
+    img: gs,
+    name: "Giorgi_Samkharadze-text",
+    role: "Co-Founder_&_Chief_Operating_Officer-text",
+  },
+
+  {
+    img: rafael,
+    name: "Rafael_Gyulnazaryan-text",
+    role: "Co-Founder_&_Chief_Technology_Officer-text",
+  },
+  {
+    img: gela,
+    name: "Gela_Makharadze-text",
+    role: "Chief_Financial_Officer-text",
+  },
+  {
+    img: beka,
+    name: "Beka_Chikobava-text",
+    role: "Head_of_CRM-text",
+  },
+  {
+    img: natia,
+    name: "Natia_Zedelashvili-text",
+    role: "Head_of_Design-text",
+  },
+  {
+    img: nadusa,
+    name: "Giorgi_Nadaraia-text",
+    role: "Head_of_Marketing-text",
+  },
+  {
+    img: misho,
+    name: "Mikheil_Gogitashvili-text",
+    role: "Head_of_Products-text",
+  },
+  {
+    img: vov,
+    name: "Vova_Sardanyan-text",
+    role: "Head_of_Project_Management-text",
+  },
+  {
+    img: avo,
+    name: "Avetik_Hasasyan-text",
+    role: "Tech_Guru-text",
+  },
+];
+const AboutUs = () => {
+  const { t } = useTranslation();
+  const goTo: (url: string) => void = (url) => {
+    (window.open(url, "_blank") as Window).focus();
+  };
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  return (
+    <div className="P-about-us">
+      <div className="P-about-us-text G-flex-wrap G-container">
+        <div className="P-about-card">
+          <h3>{t("Company-text")}</h3>
+          <p>{t("While_being-text")}</p>
+          <span>{t("FOLLOW-text")}</span>
+          <div className="G-flex P-icons">
+            <img
+              src={fb}
+              alt="facebook"
+              onClick={() => {
+                goTo("https://www.facebook.com/HawX.io");
+              }}
+            />
+            <img
+              src={linkedin}
+              alt="linkedin"
+              onClick={() => {
+                goTo("https://www.linkedin.com/company/hawx/");
+              }}
+            />
+            <img
+              src={inst}
+              alt="instagram"
+              onClick={() => {
+                goTo("https://www.instagram.com/hawx.io/");
+              }}
+            />
+          </div>
+        </div>
+        <div className="P-about-card">
+          <h3>{t("Who_We_Are-text")}</h3>
+          <p>{t("Our_vision-text")}</p>
+          <p>{t("Our_mission-text")}</p>
+        </div>
+        <div className="P-about-card">
+          <h3>{t("HawX_Standout-text")}</h3>
+          <p>{t("Managing_an_online-text")}</p>
+          <div className="P-numbers G-flex">
+            <div>
+              <p>30+</p>
+              <span>{t("Markets-text")}</span>
+            </div>
+            <div>
+              <p>85+</p>
+              <span>{t("Employees-text")}</span>
+            </div>
+            <div>
+              <p>3</p>
+              <span>{t("Offices-text")}</span>
+            </div>
+            <div>
+              <p>25+</p>
+              <span>{t("Clients-text")}</span>
+            </div>
+          </div>
+        </div>
+        <div className="P-about-card">
+          <h3>{t("The_Team-text")}</h3>
+          <p>{t("HawX_i_a_team-text")}</p>
+          <p>{t("Delivering_a_personal-text")}</p>
+        </div>
+      </div>
+      {/* <div className="P-photos G-container">
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         <h2>{t("Leadership_&_Management-text")}</h2>
         <div className="P-container">
           {leadership.map((item, index) => {
@@ -176,8 +310,13 @@ const AboutUs = () => {
           })}
         </div>
       </div> */}
+<<<<<<< HEAD
         </div>
     );
+=======
+    </div>
+  );
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
 };
 
 export default AboutUs;

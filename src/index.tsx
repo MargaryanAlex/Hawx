@@ -6,6 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+<<<<<<< HEAD
 import LoaderContext from "./context/loader-context";
 
 const root = ReactDOM.createRoot(
@@ -18,6 +19,16 @@ root.render(
             <App/>
         </LoaderContext>
     </React.StrictMode>
+=======
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
 );
 
 // If you want to start measuring performance in your app, pass a function

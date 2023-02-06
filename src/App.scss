@@ -5,7 +5,11 @@ h1 {
 .App {
   width: 100%;
   min-height: 100vh;
+<<<<<<< HEAD
   //padding-bottom: 610px;
+=======
+  padding-bottom: 610px;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   @include screen-max-width-991 {
     padding-bottom: 0;
   }

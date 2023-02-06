@@ -15,8 +15,12 @@ import {useTranslation} from "react-i18next";
 // import transwayz from "src/assets/img/clientsLogo/transwayz.svg";
 import map from "src/assets/img/clientsLogo/map.png";
 import "./style.scss";
+<<<<<<< HEAD
 import {Fragment, useEffect, useRef} from "react";
 import Animation from "../../components/animation";
+=======
+import {Fragment, useEffect} from "react";
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
 
 // const logos = [
 //   sorsx,
@@ -57,20 +61,29 @@ const countries = [
     "Armenia"
 ];
 const Clients = () => {
+<<<<<<< HEAD
     const title = useRef<HTMLDivElement | null>(null)
     const world = useRef<HTMLDivElement | null>(null)
     const partners = useRef<HTMLDivElement | null>(null)
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
     const {t} = useTranslation();
     useEffect(() => {
         window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     }, []);
     return (
         <div className="P-clients">
+<<<<<<< HEAD
             <div className="G-container P-clients-top " ref={title}>
                 <Animation element={title}>
                     <h2>{t("Companies_That-text")}</h2>
                     <p>{t("While_being_on_the_market-text")}</p>
                 </Animation>
+=======
+            <div className="G-container P-clients-top ">
+                <h2>{t("Companies_That-text")}</h2>
+                <p>{t("While_being_on_the_market-text")}</p>
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
             </div>
             {/* <div className="P-clients-logos G-container ">
         <h3>{t("Clients-text")}</h3>
@@ -92,6 +105,7 @@ const Clients = () => {
           <span>{t("And_More-text")}</span>
         </div>
       </div> */}
+<<<<<<< HEAD
             <div className="P-clients-map" ref={world}>
                 <Animation element={world}>
                     <h3>{t("Countries_Around-text")}</h3>
@@ -102,11 +116,22 @@ const Clients = () => {
                         </div>
                     </div>
                 </Animation>
+=======
+            <div className="P-clients-map">
+                <h3>{t("Countries_Around-text")}</h3>
+                <div className="P-clients-map-container">
+                    <div className="G-container">
+                        {" "}
+                        <img src={map} alt="map"/>
+                    </div>
+                </div>
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
                 <div
                     className="G-container"
                     style={{
                         overflow: "hidden",
                     }}
+<<<<<<< HEAD
                     ref={partners}
                 >
                     <Animation element={partners}>
@@ -121,6 +146,19 @@ const Clients = () => {
                             ))}
                         </div>
                     </Animation>
+=======
+                >
+                    <div className="G-flex-wrap P-countries G-justify-between">
+                        {countries.map((item, index) => (
+                            <Fragment key={index + item}>
+                                <p key={item + index}>{item}</p>
+                                {index !== countries.length - 1 ? (
+                                    <div className="P-horizontal-divider" key={index}/>
+                                ) : null}
+                            </Fragment>
+                        ))}
+                    </div>
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
                 </div>
             </div>
         </div>

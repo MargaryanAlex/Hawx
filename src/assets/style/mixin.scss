@@ -1,20 +1,26 @@
 @import "./variables";
 
+<<<<<<< HEAD
 @mixin screen-max-width-1200 {
   @media (max-width: $max-width-1200) {
     @content;
   }
 }
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
 @mixin screen-max-width-991 {
   @media (max-width: $max-width-991) {
     @content;
   }
 }
+<<<<<<< HEAD
 @mixin screen-max-width-900 {
   @media (max-width: $max-width-900) {
     @content;
   }
 }
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
 @mixin screen-max-width-767 {
   @media (max-width: $max-width-767) {
     @content;

@@ -1,4 +1,5 @@
 @import "src/assets/style/index.scss";
+<<<<<<< HEAD
 
 .P-header {
   position: relative;
@@ -7,7 +8,7 @@
   z-index: 99;
   -webkit-transition: 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;git
+  -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   @include screen-max-width-991 {
@@ -49,11 +50,18 @@
   }
 
 
+=======
+.P-header {
+  padding: 40px 0 40px;
+  background: #ffffff;
+  z-index: 99999999;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   @include screen-max-width-991 {
     padding: 20px 0;
     position: sticky;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     background-color: #FFFFFF;
 
     .P-menu-icon.icon.menu {
@@ -65,11 +73,17 @@
   width: 100%;
   z-index: 9999;
 
+=======
+  }
+  width: 100%;
+  z-index: 9999;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   * {
     color: #23232f;
     cursor: pointer;
     font-size: 14px;
   }
+<<<<<<< HEAD
 
   &.white {
     position: relative;
@@ -159,6 +173,15 @@
       .P-dropdown {
         position: relative;
 
+=======
+  .P-menu {
+    gap: 100px;
+    z-index: 9999;
+    .P-navigation {
+      gap: 48px;
+      .P-dropdown {
+        position: relative;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         .P-options {
           background: #ffffff;
           margin-top: 15px;
@@ -166,6 +189,7 @@
           max-height: 0;
           position: absolute;
           white-space: nowrap;
+<<<<<<< HEAD
           -webkit-transition: 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
           -moz-transition: all 0.4s ease-in-out;
@@ -178,11 +202,15 @@
             -ms-transition: none !important;
             -o-transition: none !important;
           }
+=======
+          transition: all 0.4s ease-in-out;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
           box-sizing: border-box;
           border: 0px solid #dbdbdb;
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
           border-radius: 4px;
           left: 0;
+<<<<<<< HEAD
 
           ul {
             display: block;
@@ -198,6 +226,11 @@
               -ms-transition: none !important;
               -o-transition: none !important;
             }
+=======
+          ul {
+            display: block;
+            transition: all 0.4s ease-in-out;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
             max-height: 0;
             overflow: hidden;
             width: fit-content;
@@ -207,11 +240,15 @@
             }
           }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         .P-options.active {
           max-height: 350px;
           padding: 0 20px;
           border-width: 1px;
+<<<<<<< HEAD
 
           .active {
             color: $blue;
@@ -221,6 +258,11 @@
             max-height: 350px;
           }
 
+=======
+          ul {
+            max-height: 350px;
+          }
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
           // &:before {
           //   content: "\25B2";
           //   color: #ffffff;
@@ -234,6 +276,7 @@
       }
     }
   }
+<<<<<<< HEAD
 
   .P-mobile-menu.active {
     left: 0;
@@ -280,12 +323,21 @@
       -ms-transition: none !important;
       -o-transition: none !important;
     }
+=======
+  .P-mobile-menu.active {
+    left: 0;
+  }
+  .P-mobile-menu {
+    position: fixed;
+    transition: all 0.4s ease-in-out;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
     z-index: 99;
     top: 0;
     left: 100%;
     bottom: 0;
     width: 100vw;
     height: 100vh;
+<<<<<<< HEAD
 
     overflow-y: auto;
     overflow-x: hidden;
@@ -323,6 +375,12 @@
       }
     }
 
+=======
+    background: #0148ff;
+    padding: 20px;
+    padding-right: 0;
+    overflow-y: auto;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
     * {
       font-weight: 600;
       font-size: 24px;
@@ -332,13 +390,18 @@
 
     .P-selector {
       ul {
+<<<<<<< HEAD
         background: $blue !important;
 
+=======
+        background: #0148ff !important;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         * {
           font-size: 20px;
         }
       }
     }
+<<<<<<< HEAD
 
     * {
       color: white;
@@ -357,10 +420,29 @@
 
     .P-nav {
       height: calc(100% - 133px);
+=======
+    * {
+      color: white;
+    }
+    .P-top {
+      position: fixed;
+      width: calc(100% - 25px);
+      background: #0148ff;
+      z-index: 1;
+      top: 0px;
+      // height: 25px;
+      padding: 20px 20px 20px 0px;
+
+      align-items: center;
+    }
+    .P-nav {
+      height: calc(100% - 25px);
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
+<<<<<<< HEAD
       margin-top: 68px;
 
       .P-navigation {
@@ -372,6 +454,15 @@
         margin-top: 40px;
       }
 
+=======
+      margin-top: 108px;
+      .P-navigation {
+        margin-bottom: 40px;
+      }
+      a {
+        margin-top: 40px;
+      }
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       li a {
         margin-top: 0;
         font-weight: 600;
@@ -383,15 +474,21 @@
 
         color: #ffffff;
       }
+<<<<<<< HEAD
 
       .P-dropdown {
         margin-top: 40px;
         position: relative;
 
+=======
+      .P-dropdown {
+        position: relative;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         .P-options {
           width: 100%;
           max-height: 0;
           white-space: nowrap;
+<<<<<<< HEAD
           -webkit-transition: 0.4s ease-in-out;
           transition: all 0.4s ease-in-out;
           -moz-transition: all 0.4s ease-in-out;
@@ -404,11 +501,15 @@
             -ms-transition: none !important;
             -o-transition: none !important;
           }
+=======
+          transition: all 0.4s ease-in-out;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
           border-radius: 15px;
           right: -100%;
           //   box-shadow: 0px 0px 150px 13px rgba(0, 0, 0, 0.1);
           ul {
             display: block;
+<<<<<<< HEAD
             -webkit-transition: 0.4s ease-in-out;
             transition: all 0.4s ease-in-out;
             -moz-transition: all 0.4s ease-in-out;
@@ -425,16 +526,28 @@
             overflow: hidden;
             width: fit-content;
 
+=======
+            transition: all 0.4s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+            width: fit-content;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
             li {
               margin: 3px auto;
             }
           }
         }
+<<<<<<< HEAD
 
         .P-options.active {
           max-height: 350px;
           padding: 15px;
 
+=======
+        .P-options.active {
+          max-height: 350px;
+          padding: 15px;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
           ul {
             max-height: 350px;
           }
@@ -442,6 +555,7 @@
       }
     }
   }
+<<<<<<< HEAD
 
   .P-language-bar {
     width: 100px;
@@ -455,10 +569,18 @@
 
       ul {
         width: 100px;
+=======
+  .P-language-bar {
+    width: 80px;
+    .P-selector {
+      position: relative;
+      ul {
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         position: absolute;
         background: #ffffff;
         border-radius: 4px;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+<<<<<<< HEAD
         -webkit-transition: 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
@@ -481,6 +603,14 @@
         }
       }
 
+=======
+        transition: all 0.4s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+        width: fit-content;
+        border: 0px solid #dbdbdb;
+      }
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       ul.active {
         border-width: 1px;
         max-height: 80px;

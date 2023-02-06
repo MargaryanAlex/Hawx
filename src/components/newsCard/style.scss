@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 @import "src/assets/style";
 
 .P-newsCard {
   //max-width: 250px;
   width: 100%;
   height: 100%;
+=======
+.P-newsCard {
+  max-width: 250px;
+  width: 100%;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   min-width: 212px;
   margin: 0 auto;
   min-height: 290px;
@@ -13,6 +19,7 @@
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
   padding-bottom: 15px;
   box-sizing: border-box;
+<<<<<<< HEAD
   //overflow: hidden;
 
   &:hover {
@@ -21,6 +28,8 @@
     }
   }
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   h5 {
     font-weight: 400;
     font-size: 11px;
@@ -29,7 +38,10 @@
     color: #434353;
     margin-bottom: 20px;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   p {
     font-weight: 400 !important;
     font-size: 14px !important;
@@ -38,6 +50,7 @@
     color: #23232f !important;
     text-align: left !important;
   }
+<<<<<<< HEAD
 
   img {
     z-index: 0;
@@ -60,13 +73,25 @@
     //max-height: 135px;
   }
 
+=======
+  img {
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+  }
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   span {
     cursor: pointer;
     font-size: 11px;
     line-height: 16px;
     font-size: 14px;
     text-decoration-line: underline;
+<<<<<<< HEAD
     color: $blue;
+=======
+    color: #0148ff;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   }
 
   .P-content {

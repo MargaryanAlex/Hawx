@@ -11,6 +11,7 @@
       margin-top: 44px;
       row-gap: 58px;
     }
+<<<<<<< HEAD
 
     .P-about-card {
       width: calc(50% - 95px);
@@ -31,6 +32,13 @@
         width: 100%;
       }
 
+=======
+    .P-about-card {
+      width: calc(50% - 95px);
+      @include screen-max-width-767 {
+        width: 100%;
+      }
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       h3 {
         font-weight: 600;
         font-size: 24px;
@@ -38,11 +46,15 @@
         margin-bottom: 35px;
         color: #23232f;
       }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       p {
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 17px;
+<<<<<<< HEAD
 
         span {
           margin: 0;
@@ -51,6 +63,10 @@
         color: #434353;
       }
 
+=======
+        color: #434353;
+      }
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       span {
         display: block;
         font-weight: 600;
@@ -59,16 +75,23 @@
         margin-bottom: 14px;
         color: #23232f;
       }
+<<<<<<< HEAD
 
       .P-icons {
         gap: 13px;
       }
 
+=======
+      .P-icons {
+        gap: 13px;
+      }
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       .P-numbers {
         gap: 37px;
         @include screen-max-width-440 {
           gap: 25px;
         }
+<<<<<<< HEAD
 
         p {
           font-weight: 600;
@@ -80,11 +103,25 @@
           font-weight: 400;
           font-size: 14px;
           color: $blue;
+=======
+        p {
+          font-weight: 600;
+          font-size: 24px;
+          color: #0148ff;
+        }
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #0148ff;
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         }
       }
     }
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   .P-photos {
     h2 {
       font-weight: 600;
@@ -94,7 +131,10 @@
       color: #23232f;
       margin-bottom: 40px;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
     .P-container {
       display: flex;
       flex-wrap: wrap;
@@ -106,7 +146,10 @@
       @include screen-max-width-767 {
       }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
     .P-photo-card {
       width: 25%;
       padding: 9px;
@@ -135,7 +178,10 @@
         background: #d9d9d9;
         border-radius: 4px;
         overflow: hidden;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
         img {
           object-fit: cover;
           width: 100%;
@@ -143,14 +189,20 @@
           object-position: top;
         }
       }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       h4 {
         font-size: 20px;
         line-height: 30px;
         margin: 14px auto 4px;
         color: #23232f;
       }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
       p {
         width: 80%;
         margin: 0 auto;

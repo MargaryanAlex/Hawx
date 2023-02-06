@@ -13,6 +13,7 @@ import AboutUs from "./aboutUs";
 import Privacy from "./privacy";
 import Terms from "./terms";
 import Cookies from "./cookies";
+<<<<<<< HEAD
 import Booster from "./booster";
 export const Components = {
   Home,
@@ -28,6 +29,11 @@ export const Components = {
   Cookies,
 
 
+=======
+export const Components = {
+  Home,
+  Clients,
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
   Design,
   Website,
   Crm,
@@ -35,4 +41,13 @@ export const Components = {
   Fraud,
   Product,
   Financial,
+<<<<<<< HEAD
+=======
+  Contacts,
+  News,
+  AboutUs,
+  Privacy,
+  Terms,
+  Cookies,
+>>>>>>> 9444585a40ebb3f1dceede8d9029cf775b02c5ac
 };
